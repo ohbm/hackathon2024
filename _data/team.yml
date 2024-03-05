@@ -1,0 +1,121 @@
+hackathon:
+  - name: "Sina Mansour L."
+    image: sina_mansour.png
+    title: Hackathon Chair
+    location: "Singapore, Singapore"
+    github: sina-mansour
+    twitter: Sina_Mansour_L
+
+  - name: "Qing Wang (Vincent)"
+    image: qing_wang.jpg
+    title: Hackathon Co-Chair
+    location: "Shanghai, China"
+    github: Vincent-wq
+    twitter: QingWan99752335
+
+  - name: "Roza Gunes Bayrak"
+    image: roza_gbayrak.png
+    title: Hackathon Chair Elect
+    location: "Nashville, USA"
+    github: rgbayrak
+    twitter: redgreenblues
+
+  - name: "Bruno Hebling Vieira"
+    image: bruno_vieira.jpg
+    title: Hackathon Co-Chair Elect
+    location: "Zurich, Switzerland"
+    github: bhvieira
+    twitter: HeblingVieira
+
+ossig:
+  - name: "Nils Muhlert"
+    image: nils_muhlert.png
+    title: OSSIG Chair
+    location: "Manchester, UK"
+    github: nmuhlert
+    twitter: nilsmuhlert
+
+  - name: "Subapriya Suppiah"
+    image: subapriya_suppiah.png
+    title: OSSIG Secretary
+    location: "Serdang, Malaysia"
+    github: Drpriyasiva
+    twitter: SubapriyaSuppi1
+
+  - name: "Yi Ju Lee (Jean)"
+    image: yiju_lee.jpg
+    title: OSSIG Treasurer
+    location: "Taipei, Taiwan"
+    github: jean890203
+    twitter: jean890203
+
+  - name: "Stefano Moia"
+    image: stefano_moia1.jpg
+    title: OSSIG Chair Elect
+    location: "Maastricht, Netherlands"
+    github: smoia
+    twitter: SteMoia
+
+  - name: "Wei Zhang"
+    image: wei_zhang.jpg
+    title: OSSIG Secretary Elect
+    location: "St. Louis, USA"
+    github: wzzang
+    twitter: neurozzang
+
+  - name: "Nur Shahidatul Nabila Ibrahim"
+    image: nur_nabila.png
+    title: OSSIG Treasurer Elect
+    location: "Nilai, Malaysia"
+    github: ???
+    twitter: ???
+
+  - name: "Selma Lugtmeijer"
+    image: selma_lugtmeijer.jpg
+    title: OSR Chair
+    location: "Birmingham, UK"
+    github: ???
+    twitter: LugtmeijerSelma
+
+  - name: "Xiangzhen Kong"
+    image: xiangzhen_kong.jpg
+    title: OSR Co-Chair
+    location: "Hangzhou, China"
+    github: ???
+    twitter: xiangzhenkong
+
+  - name: "Ju-Chi Yu"
+    image: ju-chi_yu.jpg
+    title: OSR Chair Elect
+    location: "Toronto, Canada"
+    github: juchiyu
+    twitter: juchiyu
+
+  - name: "Yu-Fang Yang"
+    image: yufang_yang.jpg
+    title: Community Liaison Officer
+    location: "Berlin, Germany"
+    github: ufangYang
+    twitter: ufangyang
+
+  - name: "Hong Ji Kim"
+    image: hongji_kim.jpg
+    title: Community Liaison Officer
+    location: "Seoul, South Korea"
+    github: hongjikim
+    twitter: Hongjikim
+
+  - name: "Anibal Solon Heinsfeld"
+    image: anibal_solon.jpg
+    title: Inclusivity Officer
+    location: "Austin, USA"
+    github: anibalsolon
+    twitter: anibalsolon
+
+  - name: "Povilas Karvelis"
+    image: povilas_karvelis.png
+    title: Hybridization Officer
+    location: "Toronto, Canada"
+    github: frank-pk
+    twitter: KarvelisPovilas
+

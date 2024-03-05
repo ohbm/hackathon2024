@@ -1,3 +1,5 @@
+$theme-primary: #ba304a;
+
 html,
 body {
     height: 100%;
@@ -75,22 +77,32 @@ aside {
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
+        line-height: 40px;
+        font-size: 26px;
         color: $theme-primary;
         @include sans-serif-font;
-        font-weight: 700;
+        font-weight: 900;
         text-transform: uppercase;
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
         }
     }
+    .navbar-brand-logo {
+        float: left;
+        margin: 10px; /* Adjust margin as needed */
+    }
+    .navbar-brand-logo img {
+        max-height: 50px; /* Set the maximum height of your logo */
+    }
     .nav {
         > li {
             > a,
             > a:focus {
+                line-height: 40px;
                 text-transform: uppercase;
-                font-weight: 700;
-                font-size: 13px;
+                font-weight: 900;
+                font-size: 14px;
                 color: $theme-dark;
                 &:hover {
                     color: $theme-primary;
@@ -100,7 +112,7 @@ aside {
                 > a,
                 > a:focus {
                     color: $theme-primary !important;
-                    background-color: transparent;
+                    background-color: transparent;  
                     &:hover {
                         background-color: transparent;
                     }
@@ -109,13 +121,13 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color: transparent;
+        background-color: rgba(1, 1, 1, 0.3);
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: rgba($theme-primary, .7);
             &:hover,
             &:focus {
-                color: white;
+                color: $theme-primary;
             }
         }
         .nav > li > a,
@@ -130,7 +142,7 @@ aside {
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
-                font-size: 14px;
+                font-size: 20px;
                 &:hover,
                 &:focus {
                     color: darken($theme-primary, 10%);
@@ -155,7 +167,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    // background-image: url('../img/header.png');
     text-align: center;
     color: white;
     .header-content {
@@ -349,3 +361,17 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+// Circular images
+
+.circular-image {
+    width: 70%; /* Adjust the width as needed */
+    height: 70%; /* Adjust the height as needed */
+    margin: 15% 15% 5% 15%;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

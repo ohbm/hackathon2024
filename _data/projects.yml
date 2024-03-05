@@ -1,0 +1,47 @@
+# PROJECT TEMPLATE
+# - title: "Your awesome project"
+#   # images must be put in the img/hackathon folder. If there is no image you can use whatever.png
+#   image: whatever.png
+#   details: "Tell us about what you want to achieve. More information here: <a href=https://github.com/ohbm/hackathon2020/issues/INSERT_ISSUE_NUMBER_HERE</a>"
+#   issue: Issue number
+# -------------------------------------------------------------------------------------------------
+
+# EXAMPLE
+#   - title: "Your awesome project"
+#     image: whatever.png
+#     details: "Tell us about what you want to achieve. More information here: <a href=https://github.com/ohbm/hackathon2020/issues/INSERT_ISSUE_NUMBER_HERE</a>"
+#     issue: 1
+
+projectlist:
+
+  - title: "Your awesome project"
+    image: hands.jpg
+    details: "Tell us about what you want to achieve. Tell us more! Let people know what you want to do."
+    issue: 1
+    categories: 
+      - fMRI
+      - MEG
+
+  - title: "Another awesome project"
+    image: hands.jpg
+    details: "Tell us about what you want to achieve. Tell us more! Let people know what you want to do."
+    issue: 1
+    categories: 
+      - DTI
+      - Tractography
+
+  - title: "Your awesome project"
+    image: hands.jpg
+    details: "Tell us about what you want to achieve. Tell us more! Let people know what you want to do."
+    issue: 1
+    categories: 
+      - fMRI
+      - MEG
+
+  - title: "Another awesome project"
+    image: hands.jpg
+    details: "Tell us about what you want to achieve. Tell us more! Let people know what you want to do."
+    issue: 1
+    categories: 
+      - DTI
+      - Tractography

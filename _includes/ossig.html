@@ -1,0 +1,77 @@
+<section id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-dark">
+                <p class="text-center text-primary"><i class="fa-solid fa-users fa-4x wow bounceIn" data-wow-delay=".3s"></i></p>
+                <h2 class="section-heading text-center text-primary">Brainhack Team</h3>
+                <hr class="primary">
+                
+                {% for member in site.data.team.hackathon %}
+                <div class="col-sm-6">
+                    <div class="circular-image">
+                        <img class="img-responsive" src="{{ site.baseurl }}/img/team/{{ member.image }}" alt="{{ member.name }}">
+                    </div>
+                    <div class="text-center" style="height: 100px;">
+                        <p class="h2">{{ member.name }}</p>
+                        <p class="h4 text-primary">{{ member.title }}</p>
+                        <p class="h4 text-primary">
+                            {%- if member.github != "???" -%}
+                                <a href="https://github.com/{{ member.github }}">
+                                    <i class="fa-brands fa-2x fa-github" data-wow-delay=".3s"></i>
+                                </a> &nbsp;
+                            {%- endif -%}
+                            {%- if member.twitter != "???" -%}
+                                <a href="https://twitter.com/{{ member.twitter }}">
+                                    <i class="fa-brands fa-2x fa-twitter" data-wow-delay=".3s"></i>
+                                </a>
+                            {%- endif -%}
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="col-lg-12" style="height: 80px;"></div>
+                <a href="https://ossig.netlify.app/">
+                    <div class="col-lg-12 text-center">
+                        <img class="img-fluid  mx-auto" src="{{ site.baseurl }}/img/ossig_logo.svg" alt="OSSIG" style="max-width: 150px;">
+                    </div>
+                </a>
+                <div class="col-lg-12" style="height: 40px;"></div>
+                <p class="h4">The OHBM Open Science SIG mission is to advance neuroimaging research by fostering the open sharing of ideas, data, and tools between members of the OHBM community. This will be accomplished by organizing educational events, supporting collaborative initiatives, and providing mentorship to junior researchers.As with previous years, our three main contributions to the OHBM annual meetings are:</p>
+                <ul>
+                    <li>Organizing a Brainhack to precede the annual meeting</li>
+                    <li>Introducing the tools of open science via interactive tutorials</li>
+                    <li>Facilitating collaborative work on a wide range of open science projects</li>
+                </ul>
+                <br>
+                <h2 class="section-heading text-center text-primary">OSSIG Team</h3>
+                <hr class="primary">
+                <p class="h4">The Brainhack Team is a part of the broader OHBM OSSIG (Open Science Special Interest Group), collaborating on various open science initiatives, including the Brainhack and the Open Science Rooms. OSSIG members actively contribute to advancing open science principles and practices.</p>
+                
+                {% for member in site.data.team.ossig %}
+                <div class="col-sm-4">
+                    <div class="circular-image">
+                        <img class="img-responsive" src="{{ site.baseurl }}/img/team/{{ member.image }}" alt="{{ member.name }}">
+                    </div>
+                    <div class="text-center" style="height: 100px;">
+                        <p class="h3">{{ member.name }}</p>
+                        <p class="h4 text-primary">{{ member.title }}</p>
+                        <p class="h4 text-primary">
+                            {%- if member.github != "???" -%}
+                                <a href="https://github.com/{{ member.github }}">
+                                    <i class="fa-brands fa-github" data-wow-delay=".3s"></i>
+                                </a> &nbsp;
+                            {%- endif -%}
+                            {%- if member.twitter != "???" -%}
+                                <a href="https://twitter.com/{{ member.twitter }}">
+                                    <i class="fa-brands fa-twitter" data-wow-delay=".3s"></i>
+                                </a>
+                            {%- endif -%}
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+    </div>
+</section>

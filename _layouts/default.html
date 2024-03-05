@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body id="page-top">
+  {% include sidenav.html %}
+  {% include sideheader.html %}
+
+  {% if page.templateFile %}
+    {% include {{ page.templateFile }} %}
+  {% endif %}
+
+  {% include aside.html %}
+  {% include contact.html %}
+  {% include scripts.html %}
+</body>
+
+</html>

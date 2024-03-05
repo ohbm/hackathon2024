@@ -1,0 +1,37 @@
+nav:
+  - title: "About"
+    type: "section"
+    link: "about"
+
+  - title: "Schedule"
+    type: "subsection"
+    link: schedule
+
+  - title: "Hacktrack"
+    type: "subsection"
+    link: hacktrack
+
+  # - title: "Traintrack"
+  #   type: "section"
+  #   link: traintrack
+
+  - title: "Team"
+    type: "subsection"
+    link: team
+
+  - title: "Venue"
+    type: "section"
+    link: venue
+
+  - title: "Contact"
+    type: "allsection"
+    link: contact
+
+  # - title: "Home"
+  #   section: page-top
+
+  # - title: "FAQ"
+  #   section: faq
+
+  # - title: "Global"
+  #   url: https://brainhack.org/global2022/

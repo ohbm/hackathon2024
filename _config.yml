@@ -1,12 +1,13 @@
 # Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: "OHBM BrainHack 2024"
+email: "OHBMopenscience@gmail.com"
+description: "OHBM Brainhack, June 20-22nd, 2024. Organized by the OHBM Open Science SIG." # this means to ignore newlines until "baseurl:"
+baseurl: "/hackathon2024" # the subpath of your site, e.g. /blog/
+url: "https://ohbm.github.io/hackathon2024" # the base hostname & protocol for your site
 
-twitter_username:
-github_username:
+twitter_username: "@OhbmOpen"
+github_username: "ohbm"
+discord_invite: "https://discord.gg/ohbmbrainhack2024"
 
 # Build settings
 markdown: kramdown
