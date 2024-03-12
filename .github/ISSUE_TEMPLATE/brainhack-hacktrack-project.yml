@@ -69,6 +69,14 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: pitch
+    attributes:
+      label: Link to the Project pitch
+      description: (not required, but highly recommended) If your project involves hybrid/online participation, create a brief project pitch (2-5 minutes) for the Brainhack audience. See [more](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#pitch-video) for additional guidance. Upload the pitch video to YouTube and share the link with us.
+    validations:
+      required: false
+
   - type: checkboxes
     id: otherhub
     attributes:
@@ -101,7 +109,7 @@ body:
     id: issues
     attributes:
       label: Good first issues
-      description: If you welcome new contributors, please provide a list of good-first-issues (not required, but highly recommended), check [the guide](https://github.com/ohbm/hackathon2023/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#good-first-issues) for suggestions
+      description: If you welcome new contributors, please provide a list of good-first-issues (not required, but highly recommended), check [the guide](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#good-first-issues) for suggestions
     validations:
       required: false
 
@@ -109,7 +117,7 @@ body:
     id: twiter
     attributes:
       label: Twitter summary
-      description: Twitter-size summary of your project pitch, please check [the guide](https://github.com/ohbm/hackathon2023/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch)
+      description: Twitter-size summary of your project pitch, please check [the guide](https://github.com/ohbm/hackathon2024/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch)
     validations:
       required: false
 
