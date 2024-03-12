@@ -1,0 +1,131 @@
+name: Brainhack HackTrack Project Sumbission
+description: This provides the backbone structure for your project description. Please follow along to submit your project!
+title: "<My Project Name>"
+labels: ["Hackathon Project"]
+assignees:
+  - sina-mansour
+body:
+  - type: markdown
+    attributes:
+      value: |
+        *We are very excited to meet you at the 2024 OHBM Brainhack 🎉* *To submit a project, you need to register to 2024 OHBM Brainhack first, please follow [this link](https://ohbm.github.io/hackathon2024/404/) to register. Thank you!*
+
+        *We have prepared this template to help with your project submission. Please fill the template (at least all 'required' items must be provided) and we will assign a 'project monitor' to follow your submission.
+        If at any time you need help or anything is unclear, please add a comment and ping your project monitor.*
+
+        Thank you!
+
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Name of your awesome project. Please also update the title of the issue to be the title of your project
+    validations:
+      required: true
+
+  - type: textarea
+    id: goals
+    attributes:
+      label: Short description and the goals for the OHBM BrainHack
+      description: Please provide a short description and goals for the hackathon, check [the guide](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#goals) for suggestions
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link to the Project
+      description: Please provide **one URL** for the project, e.g. GitHub repository. See [the guide](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#link-to-project) for other suggestions.
+    validations:
+      required: true
+
+  - type: input
+    id: website-image
+    attributes:
+      label: Image/Logo for the OHBM brainhack website
+      description: Please provide a link only. Please provide the RAW content of the file if you use an image from a GitHub repo. We kindly request that the image be provided in a square format, ensuring equal width and height for a polished visual appearance.
+    validations:
+      required: true
+
+  - type: textarea
+    id: project-leads
+    attributes:
+      label: Project lead
+      description: Your name and GitHub login AND Discord login (we will be using Discord during the hackathon, please be sure to register [here](https://discord.gg/yK8jakPfnG)). Add multiple leaders if you can, if leaders cover different hubs, please add this next to the name.
+      placeholder: One per line
+    validations:
+      required: true
+
+  - type: dropdown
+    id: hub
+    attributes:
+      label: Main Hub
+      description: The main Hackathon Hub of your project, see more [here](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#hubs)
+      options:
+        - Seoul
+        - Hybrid (Asia / Pacific)
+        - Hybrid (Europe / Middle East / Africa)
+        - Hybrid (Americas)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: otherhub
+    attributes:
+      label: Other hubs covered by the leaders
+      description: Please choose other hubs that are covered by your leaders (be sure to have at least one leader in the specific timezones, and make a note next to their names)
+      options:
+        - label: Seoul
+        - label: Hybrid (Asia / Pacific)
+        - label: Hybrid (Europe / Middle East / Africa)
+        - label: Hybrid (Americas)
+
+  - type: textarea
+    id: skills
+    attributes:
+      label: Skills
+      description: Please provide skills you expect contributors to have, so others can have better ideas if they can join. You can include non-technical skills, or simply write None, check [the guide](https://github.com/ohbm/hackathon2024/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#onboarding-skills) for more suggestions.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tutorials
+    attributes:
+      label: Recommended tutorials for new contributors
+      description: "Please provide a list of tutorials that might be helpful for new contributors. Make sure to include the link to the tutorials here. Several great examples of such tutorials can be found at the following places: [traintrack online selection](https://ohbm.github.io/hackathon2023/traintrack/), [brainhack school modules](https://school-brainhack.github.io/modules/), [Neurohackademy lectures](https://neurohackademy.org/course_type/lectures/), and [brainhack's youtube channel](https://www.youtube.com/c/brainhackorg/playlists)"
+      placeholder: One per line
+    validations:
+      required: false
+
+  - type: textarea
+    id: issues
+    attributes:
+      label: Good first issues
+      description: If you welcome new contributors, please provide a list of good-first-issues (not required, but highly recommended), check [the guide](https://github.com/ohbm/hackathon2023/blob/main/.github/ISSUE_TEMPLATE/handbooks/projects.md#good-first-issues) for suggestions
+    validations:
+      required: false
+
+  - type: textarea
+    id: twiter
+    attributes:
+      label: Twitter summary
+      description: Twitter-size summary of your project pitch, please check [the guide](https://github.com/ohbm/hackathon2023/blob/master/.github/ISSUE_TEMPLATE/handbooks/projects.md#twitter-size-summary-of-your-project-pitch)
+    validations:
+      required: false
+
+  - type: input
+    id: chatchannel
+    attributes:
+      label: Short name for the Discord chat channel (~15 chars)
+      description: Please give a short name for the Discord chat channel, e.g. "my-brain-project"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: coc
+    attributes:
+      label: "Please read and follow the OHBM Code of Conduct"
+      description: Read here [the OHBM Code of Conduct](https://ohbm.github.io/hackathon2024/code-of-conduct/)
+      options:
+        - label: I agree to follow the OHBM Code of Conduct during the hackathon
+          required: true
