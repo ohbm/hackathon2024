@@ -6,3 +6,4 @@ gem "github-pages", group: :jekyll_plugins
 gem "bourbon"
 gem "jekyll"
 gem "jemoji"
+gem "webrick"

@@ -375,3 +375,63 @@ body {
         object-fit: cover;
     }
 }
+
+.navbar-toggle {
+    margin: 15px;
+    padding: 12px;
+}
+
+#schedule table {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#schedule td,
+#schedule th {
+    vertical-align: middle;
+    transition: font-weight 0.5s ease;
+    &:hover {
+        font-weight: 700;
+    }
+}
+
+#schedule th {
+    background: linear-gradient(to bottom, #DDD 0%, #EFEFEF 10%, #EFEFEF 50%, #EFEFEF 90%, #DDD 100%);
+    background-color: #EFEFEF;
+}
+
+#schedule .timerange {
+    font-style: italic;
+    color: #666;
+    background: linear-gradient(to bottom, #DDD 0%, #EEE 10%, #EEE 50%, #EEE 90%, #DDD 100%);
+    background-color: #EEE;
+}
+
+#schedule .starting {
+    font-weight: 500;
+    background: linear-gradient(to bottom, #DDD 0%, #FFC9E2 10%, #FFC9E2 50%, #FFC9E2 90%, #DDD 100%);
+    background-color: #FFC9E2;
+}
+
+#schedule .break {
+    font-weight: 500;
+    background: linear-gradient(to bottom, #DDD 0%, #CEFFCF 10%, #CEFFCF 50%, #CEFFCF 90%, #DDD 100%);
+    background-color: #CEFFCF;
+}
+
+#schedule .presentation {
+    font-weight: 500;
+    background: linear-gradient(to bottom, #DDD 0%, #B1FFF3 10%, #B1FFF3 50%, #B1FFF3 90%, #DDD 100%);
+    background-color: #B1FFF3;
+}
+
+#schedule .hack {
+    font-weight: 500;
+    background: linear-gradient(to bottom, #DDD 0%, #B3D0FE 10%, #B3D0FE 50%, #B3D0FE 90%, #DDD 100%);
+    background-color: #B3D0FE;
+}
+
+#schedule .train {
+    font-weight: 500;
+    background: linear-gradient(to bottom, #DDD 0%, #DDB4FF 10%, #DDB4FF 50%, #DDB4FF 90%, #DDD 100%);
+    background-color: #DDB4FF;
+}
