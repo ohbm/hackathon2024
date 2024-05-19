@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        *We are very excited to meet you at the 2024 OHBM Brainhack 🎉* *To submit a project, you need to register to 2024 OHBM Brainhack first, please follow [this link](https://ohbm.github.io/hackathon2024/404/) to register. Thank you!*
+        *We are very excited to meet you at the 2024 OHBM Brainhack 🎉* *To submit a project, you need to register to 2024 OHBM Brainhack first, please follow [this link](https://ohbm.github.io/hackathon2024/) to register. Thank you!*
 
         *We have prepared this template to help with your project submission. Please fill the template (at least all 'required' items must be provided) and we will assign a 'project monitor' to follow your submission.
         If at any time you need help or anything is unclear, please add a comment and ping your project monitor.*
