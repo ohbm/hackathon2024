@@ -3,7 +3,7 @@ description: This provides the structure for your tutorial description. Please f
 title: "<My Tutorial Title>"
 labels: ["Train Track Tutorial"]
 assignees:
-  - your-github-username
+  - bhvieira
 body:
   - type: markdown
     attributes:
