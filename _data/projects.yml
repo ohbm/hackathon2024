@@ -14,34 +14,100 @@
 
 projectlist:
 
-  - title: "Your awesome project"
-    image: hands.jpg
-    details: "Tell us about what you want to achieve. Tell us more! Let people know what you want to do."
-    issue: 1
-    categories: 
-      - fMRI
+  - title: "Poppy & Bagel: How to FAIRly curate, process, and share your neuroimaging datasets"
+    link: "https://neurobagel.org/nipoppy/overview/"
+    image: neurobagel_logo.png
+    details: |
+      Curating data, running reproducible pipelines, creating data dictionaries, integrating data from collaborators, making sensitive data FAIR - these tasks are hard; and we all have to deal with them every day. Here we aim to serve Nipoppy and Neurobagel - a set of protocols and tools with modular framework that one can adopt as needed to simplify common data organization, processing, harmonization, and sharing tasks on neuroimaging datasets.
+
+      We cover BIDSification, containerized processing with completion tracking, annotation of phenotypic data, and generation of knowledge graphs for distributed data discovery and sharing.
+
+      This is a useful project for those who:
+
+      - Feel frustrated replicating work by others or even reproducing your own work from 6 months ago
+      - Struggle with BIDSification of data
+      - Spend endless hours trying to match column names in tabular data files
+      - Work with multi-site datasets
+      - Support open-science but work with datasets that have privacy issues
+      - Want to create a community to build a common ecosystem
+
+      We have experienced all these issues ourselves in the past, and so we are here to prevent future grief to newcomers!
+    issue: 2
+    categories:
+      - BIDS
+      - Containers
+    leads:
+      - name: Michelle Wang
+        handle: michellewang
+      - name: Brent McPherson
+        handle: bcmcpher
+      - name: Sebastian Urchs
+        handle: surchs
+      - name: Nikhil Bhagwat
+        handle: nikhil153
+    shortname: "poppy_bagel"
+
+
+
+
+  - title: "BIDS 2.0"
+    link: "https://bids.neuroimaging.io/"
+    image: bids-animated.gif
+    details: |
+      - triage more issues from https://github.com/bids-standard/bids-2-devel/issues : categorize into ToDo, Punted (close), BIDS 3.0
+      - progress forward on "ToDo" or "In Progress" items of the BIDS 2.0 project: https://github.com/orgs/bids-standard/projects/10, in particular (but not limited to)
+        - https://github.com/bids-standard/bids-specification/pull/1775
+        - https://github.com/bids-standard/bids-specification/pull/1809
+    issue: 3
+    categories:
+      - BIDS
+    leads:
+      - name: Yaroslav O. Halchenko
+        handle: yarikoptic
+    shortname: "bids-2.0"
+
+
+
+
+  - title: "The BIDS connectivity project - finalization of BEPs"
+    link: "https://pestillilab.github.io/bids-connectivity/"
+    image: logo.svg
+    details: |
+      Besides `BIDS`' success, expansion, and description of multiple data modalities, gaps still exist in developing the standard to effectively support the process of scientific results reporting. Among others, this prominently refers to data obtained through and during connectivity analyses. This comprises brain parcellations, connectivity maps, structural and functional connections, major white matter tracts, diffusion signal models, white matter tractograms and tractometry, as well as networks based on dimensionality reduction. Sharing processed data and features in addition to raw and minimally processed data is critical to accelerating scientific discovery. This is because substantial effort, software, and hardware instrumentation, and know-how are required to bring raw data to a usable state. The aim of the present project is to extend the BIDS standard to encompass derivatives resulting from experiments related to macroscopic brain connectivity (U.S. National Institutes of Health NIMH R01-MH126699). During the Brainhack, we would like to
+
+      - Finalize the existing BEPs ([BEP17 - Relationship matrices](https://docs.google.com/document/d/1ugBdUF6dhElXdj3u9vw0iWjE6f_Bibsro3ah7sRV0GA/edit?usp=sharing), [BEP38 - Atlases](https://github.com/bids-standard/bids-specification/pull/1714), [BEP39 - Dimensionality reduction-based networks](https://docs.google.com/document/d/1GTWsj0MFQedXjOaNk6H0or6IDVFyMAysrJ9I4Zmpz2E/edit?usp=sharing))
+      - Gather feedback from experts, users, tool developers, ie everyone!
+      - Discuss next steps, e.g. software integrations
+
+    issue: 5
+    categories:
+      - BIDS
+      - Connectivity
+      - Diffusion
+      - EEG
+      - PET
       - MEG
+    leads:
+      - name: Peer Herholz
+        handle: peerherholz
+      - name: Franco Pestilli
+        handle: francopestilli
+      - name: Ariel Rokem
+        handle: arokem
+    shortname: "bids-connectivity"
 
-  - title: "Another awesome project"
-    image: hands.jpg
-    details: "Tell us about what you want to achieve. Tell us more! Let people know what you want to do."
-    issue: 1
-    categories: 
-      - DTI
-      - Tractography
 
-  - title: "Your awesome project"
-    image: hands.jpg
-    details: "Tell us about what you want to achieve. Tell us more! Let people know what you want to do."
-    issue: 1
-    categories: 
-      - fMRI
-      - MEG
 
-  - title: "Another awesome project"
-    image: hands.jpg
-    details: "Tell us about what you want to achieve. Tell us more! Let people know what you want to do."
-    issue: 1
-    categories: 
-      - DTI
-      - Tractography
+
+  # - title: "project_title"
+  #   link: "project_url"
+  #   image: hands.jpg
+  #   details: |
+  #     multiline details
+  #   issue: issue
+  #   categories:
+  #     - cats
+  #   leads:
+  #     - name: lead_name
+  #       handle: discord_handle
+  #   shortname: "project_name"

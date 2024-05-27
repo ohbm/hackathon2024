@@ -435,3 +435,76 @@ body {
     background: linear-gradient(to bottom, #DDD 0%, #DDB4FF 10%, #DDB4FF 50%, #DDB4FF 90%, #DDD 100%);
     background-color: #DDB4FF;
 }
+
+#projects .hackathon-row {
+    height: 500px;
+    margin-top: 40px;
+    .hackathon-project-card {
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        padding: 30px;
+        background-color: #EEE;
+        .hackathon-img-wrapper {
+            width: 100%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .img-responsive {
+                height: 100%;
+                width: auto;
+                padding: 10px;
+            }
+        }
+        .hackathon-details {
+            .hackathon-project-title {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .project-tag {
+                background-color: #f2bd99;
+                color: #de5c04;
+            }
+            .hackathon-hidden-details{
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 990;
+                .hackathon-hidden-info {
+                    margin: 10vh 10vw;
+                    width: 80vw;
+                    height: 80vh;
+                    overflow: auto;
+                    padding: 10px 20px;
+                    background-color: white;
+                    z-index: 999;
+                    .collapse-button {
+                        width: 50px;
+                        height: 50px;
+                        padding: 5px;
+                        float: right;
+                        font-size: 40px;
+                        cursor: pointer;
+                    }
+                    .h3 {
+                        padding-top: 30px;
+                        font-weight: bold;
+                    }
+                    .hackathon-project-detail {
+                        margin: 40px;
+                        text-align: left;
+                    }
+                }
+            }
+
+            .hackathon-hidden-details.active{
+                display: block;
+            }
+        }
+    }
+}

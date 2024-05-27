@@ -19,8 +19,10 @@
                 <br>
                 <hr class="primary">
                 <p class="h3"> <i class="fa-solid fa-angles-down text-primary"></i> &nbsp; Explore the incredible projects submitted for this year's hackathon. <i class="fa-solid fa-angles-down text-primary"></i> &nbsp; </p>
+                <br>
+                <br>
                 
-                {% if site.data.projects.projectlist.size < 5 %}
+                {% if site.data.projects.projectlist.size < 0 %}
                     <br>.
                     <br>.
                     <br>.
@@ -32,24 +34,42 @@
                 
                     {% for project in site.data.projects.projectlist %}
                     {% assign check = forloop.index0 | modulo:2 %}
-                    <br>
-                    <br>
-                    <div class="hackathon-row col-lg-12">
-                        <a href="https://github.com/ohbm/hackathon2024/issues/{{ project.issue }}">
-                            <div class="hackathon-img-wrapper animated hiding" style="float: {% if check == 0 %}left{% else %}right{% endif %};">
-                                <img class="img-responsive" src="{{ site.baseurl }}/img/hackathon/{{ project.image }}" alt="Hackathon" style="max-width: 300px;">
-                            </div>
-                        </a>
-                        <div class="hackathon-details animated hiding">
+                    <div class="hackathon-row col-lg-6">
+                        <div class="hackathon-project-card">
                             <a href="https://github.com/ohbm/hackathon2024/issues/{{ project.issue }}">
-                                <h4>{{ project.title }}</h4>
+                                <div class="hackathon-img-wrapper animated hiding">
+                                    <img class="img-responsive" src="{{ site.baseurl }}/img/hackathon/{{ project.image }}" alt="Hackathon">
+                                </div>
                             </a>
-                            <p>PROJECT DESCRIPTION</p>
-                            <p>{{ project.details }}</p>
+                            <div class="hackathon-details animated hiding">
+                                <a href="https://github.com/ohbm/hackathon2024/issues/{{ project.issue }}">
+                                    <div class="hackathon-project-title"><h4>{{ project.title }}</h4></div>
+                                </a>
+                                <p class="btn btn-primary reveal-button"><i class="fa-solid fa-magnifying-glass"></i> Project details</p>
+                                <br>
+                                <br>
+                                {% for tag in project.categories %}
+                                    <p class="btn project-tag">{{ tag }}</p>
+                                {% endfor %}
+                                <div class="hackathon-hidden-details">
+                                    <div class="hackathon-hidden-info">
+                                        <p class="text-primary collapse-button">×</p>
+                                        <p class="h3">{{ project.title }}</p>
+                                        <div class="hackathon-project-detail">
+                                            {{ project.details | markdownify }}
+                                            <br>
+                                            <a href="https://github.com/ohbm/hackathon2024/issues/{{ project.issue }}" target="_blank">
+                                                <p class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub issue </p>
+                                            </a>
+                                            <a href="{{ project.link }}" target="_blank">
+                                                <p class="btn btn-primary"><i class="fa-solid fa-link"></i> Project URL </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <hr class="primary">
                     {% endfor %}
 
                 {% endif %}
@@ -57,3 +77,23 @@
         </div>
     </div>
 </section>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        var wrappers = document.querySelectorAll('.hackathon-row');
+
+        wrappers.forEach(function(wrapper) {
+            var button = wrapper.querySelector('.reveal-button');
+            var content = wrapper.querySelector('.hackathon-hidden-details');
+            var collapse = wrapper.querySelector('.collapse-button');
+
+            button.addEventListener('click', function() {
+                content.classList.add('active');
+            });
+
+            collapse.addEventListener('click', function() {
+                content.classList.remove('active');
+            });
+        });
+    });
+</script>
