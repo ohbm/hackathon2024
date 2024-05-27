@@ -1,0 +1,105 @@
+name: Train Track Tutorial Submission
+description: This provides the structure for your tutorial description. Please follow along to submit your tutorial!
+title: "<My Tutorial Title>"
+labels: ["Train Track Tutorial"]
+assignees:
+  - bhvieira
+body:
+  - type: markdown
+    attributes:
+      value: |
+        *We are very excited to have you at the 2024 OHBM Train Track 🎉* *To submit a tutorial, you need to register to 2024 OHBM Train Track first, please follow [this link](https://ohbm.github.io/hackathon2024/404/) to register. Thank you!*
+
+        *We have prepared this template to help with your tutorial submission. Please fill the template (at least all 'required' items must be provided) and we will assign a 'tutorial monitor' to follow your submission.
+        If at any time you need help or anything is unclear, please add a comment and ping your tutorial monitor.*
+
+        Thank you!
+
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Name of your tutorial. Please also update the title of the issue to be the title of your tutorial
+    validations:
+      required: true
+
+  - type: input
+    id: tutor-names
+    attributes:
+      label: Name of the tutor(s)
+      description: Please provide the names of the tutor(s) presenting the tutorial.
+    validations:
+      required: true
+
+  - type: input
+    id: duration
+    attributes:
+      label: Expected duration
+      description: Please provide the expected duration of the tutorial in minutes.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: recording-consent
+    attributes:
+      label: Recording Consent
+      description: Is it okay for the tutorial to be recorded and made available for online attendees?
+      options:
+        - Yes
+        - No
+    validations:
+      required: true
+
+  - type: dropdown
+    id: skill-level
+    attributes:
+      label: Required skills
+      description: Indicate the required skill level for the tutorial.
+      options:
+        - Beginner-friendly
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+
+  - type: input
+    id: programming-language
+    attributes:
+      label: Programming Language
+      description: Please specify the programming language(s) used in the tutorial.
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Provide relevant tags for your tutorial. Refer to [this list](https://school-brainhack.github.io/tags/) for ideas.
+    validations:
+      required: true
+
+  - type: input
+    id: website-image
+    attributes:
+      label: Image/Logo for the OHBM Train Track website
+      description: Please provide a link only. Please provide the RAW content of the file if you use an image from a GitHub repo. We kindly request that the image be provided in a square format, ensuring equal width and height for a polished visual appearance.
+    validations:
+      required: false
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Short description
+      description: Please provide a short description of the tutorial.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: coc
+    attributes:
+      label: "Please read and follow the OHBM Code of Conduct"
+      description: Read here [the OHBM Code of Conduct](https://ohbm.github.io/hackathon2024/code-of-conduct/)
+      options:
+        - label: I agree to follow the OHBM Code of Conduct during the hackathon
+    validations:
+      required: true
