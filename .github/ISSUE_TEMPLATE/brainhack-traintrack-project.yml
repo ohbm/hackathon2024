@@ -45,8 +45,8 @@ body:
       label: Recording Consent
       description: Is it okay for the tutorial to be recorded and made available for online attendees?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
     validations:
       required: true
 
