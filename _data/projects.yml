@@ -48,8 +48,6 @@ projectlist:
     shortname: "poppy_bagel"
 
 
-
-
   - title: "BIDS 2.0"
     link: "https://bids.neuroimaging.io/"
     image: bids-animated.gif
@@ -65,8 +63,6 @@ projectlist:
       - name: Yaroslav O. Halchenko
         handle: yarikoptic
     shortname: "bids-2.0"
-
-
 
 
   - title: "The BIDS connectivity project - finalization of BEPs"
@@ -95,6 +91,32 @@ projectlist:
       - name: Ariel Rokem
         handle: arokem
     shortname: "bids-connectivity"
+
+
+  - title: "NARPS Open Pipelines"
+    link: "https://github.com/Inria-Empenn/narps_open_pipelines"
+    image: narps.png
+    details: |
+      The goal of the NARPS Open Pipelines project is to create a codebase reproducing the 70 pipelines of the NARPS study (Botvinik-Nezer et al., 2020) and share this as an open resource for the community. We base our reproductions on the original descriptions provided by the teams and test the quality of the reproductions by comparing our results with the original results published on NeuroVault. 
+
+      The Neuroimaging Analysis Replication and Prediction Study (NARPS-[Botvinik-Nezer et al., 2020)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7771346/) aimed to provide the first scientific evidence on the variability of results across analysis teams in neuroscience. 70 teams were asked to analyze the same dataset (task-fMRI with 108 participants) and then, to provide their methods and results to be later analyzed and compared. 
+
+      We would like to focus on these tasks during the Brainhack:
+
+      - Start writing the pseudo code of a pipeline based on the knowledge of participants (i.e.: which fMRI analysis software they are used to, whether they use Python or not, ...)
+      - Start reproducing the pipeline from the pseudo code, 
+      - Improving documentation and accessibility of the project.
+    issue: 1
+    categories:
+      - fMRI
+      - FSL
+      - GLM
+      - Nipype
+      - SPM
+    leads:
+      - name: Lefort-Besnard
+        handle: jlefortbesnard
+    shortname: "NARPS_Open_Pipelines"
 
 
 
