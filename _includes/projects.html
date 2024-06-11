@@ -5,18 +5,8 @@
                 <p class="h3"> The HackTrack is the official fun side of a Brainhack event, where people can work together on projects.</p>
                 <p class="h3"> What projects? Any kind! From exploding brains to resource gathering and data sharing! </p>
                 <br>
-                <hr class="primary">
-                <p class="h3"> Would you like to propose a project?</p>
-                <p class="h3"> Just open an issue on our GitHub repository and fill the template, we will be in touch to help you get going! </p>
                 <br>
                 <a href="https://github.com/ohbm/hackathon2024/issues/new?assignees=sina-mansour&labels=Hackathon+Project&projects=&template=brainhack-hacktrack-project.yml&title=%3CMy+Project+Name%3E" target="_blank" class="btn btn-primary btn-xl page-scroll"> <i class="fa-brands fa-github"></i> &nbsp; Submit Projects</a>
-                <br>
-                <br>
-                <p class="h3"> But be sure to register first! </p>
-                <br>
-                <a href="#" class="btn btn-primary btn-xl page-scroll"> <i class="fa-regular fa-address-card"></i> &nbsp; Register for BrainHack</a>
-                <br>
-                <br>
                 <hr class="primary">
                 <p class="h3"> <i class="fa-solid fa-angles-down text-primary"></i> &nbsp; Explore the incredible projects submitted for this year's hackathon. <i class="fa-solid fa-angles-down text-primary"></i> &nbsp; </p>
                 <br>
@@ -32,17 +22,18 @@
                     </div>
                 {% else %}
                 
+                    <div id="hackathon-container">
                     {% for project in site.data.projects.projectlist %}
                     {% assign check = forloop.index0 | modulo:2 %}
                     <div class="hackathon-row col-lg-6">
                         <div class="hackathon-project-card">
-                            <a href="https://github.com/ohbm/hackathon2024/issues/{{ project.issue }}">
+                            <a href="https://github.com/ohbm/hackathon2024/issues/{{ project.issue }}" target="_blank">
                                 <div class="hackathon-img-wrapper animated hiding">
                                     <img class="img-responsive" src="{{ site.baseurl }}/img/hackathon/{{ project.image }}" alt="Hackathon">
                                 </div>
                             </a>
                             <div class="hackathon-details animated hiding">
-                                <a href="https://github.com/ohbm/hackathon2024/issues/{{ project.issue }}">
+                                <a href="https://github.com/ohbm/hackathon2024/issues/{{ project.issue }}" target="_blank">
                                     <div class="hackathon-project-title"><h4>{{ project.title }}</h4></div>
                                 </a>
                                 <p class="btn btn-primary reveal-button"><i class="fa-solid fa-magnifying-glass"></i> Project details</p>
@@ -71,6 +62,7 @@
                         </div>
                     </div>
                     {% endfor %}
+                    </div>
 
                 {% endif %}
             </div>
@@ -96,4 +88,24 @@
             });
         });
     });
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        var container = document.getElementById("hackathon-container");
+        var boxes = Array.from(container.children);
+        shuffle(boxes);
+        boxes.forEach(function(box) {
+            container.appendChild(box);
+        });
+    });
+
+    // Function to shuffle an array
+    function shuffle(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+    }
 </script>

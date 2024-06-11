@@ -119,6 +119,95 @@ projectlist:
     shortname: "NARPS_Open_Pipelines"
 
 
+  - title: "IDEAS: Interactive data exploration and analytics system"
+    link: "https://github.com/ReproNim/probable-journey"
+    image: ideas.png
+    details: |
+      Develop and use bots+LLMs+agents to query the graph stores, create an analysis strategy to answer the question, and/or search some literature. For a general review/overview of agent-based systems see the figures here: <https://arxiv.org/pdf/2404.02831>
+    issue: 7
+    categories:
+      - LLM
+      - behavior
+    leads:
+      - name: Satrajit Ghosh
+        handle: satra42
+    shortname: "brain-bot"
+
+
+  - title: "Neuroimaging zombies"
+    link: "https://github.com/neuroanatomy/neuroimaging-zombies-ohbm-2024/"
+    image: zombie.svg
+    details: |
+      The Neuroimaging zombies projects aims at providing guidelines on how to test whether an effect from the literature is replicable (more than reproducible), and how to prevent our own results to turn into irreplicable effects.
+
+      We propose to work on our 3 axes:
+      - preprocess a public dataset with your favourite tool and upload the results to GIN
+      - work on reference Quality Control
+      - work on the reference pipelines for some well established neuroimaging results
+
+      Join our Mattermost channel at [brainhack.org](https://mattermost.brainhack.org/brainhack/channels/neuroimaging-zombies), and check these slides to learn more about the project at [osf.io](https://osf.io/fvqn7/).
+    issue: 8
+    categories:
+      - git
+      - preprocessing
+      - quality control
+    leads:
+      - name: Elisabeth Dillies
+        handle: eli
+      - name: Roberto Toro
+        handle: r03ert0
+      - name: Katja Heuer
+        handle: katja
+      - name: Nicolas Traut
+        handle: ntraut
+      - name: Anita Beggiato
+        handle: nta
+    shortname: "neuroimaging-zombies"
+
+
+  - title: "Interplay between Brain Behavior & Cognition"
+    link: "https://socoden.github.io/Simulation/"
+    image: Brainhack_Longitudinal_Logo.png
+    details: |
+      As a part of a study to examine the interplay between brain, behavior, and cognition, seven sites internationally have simulated longitudinal datasets of how they envision these interactions to occur. Each site generated three sets of of data, each with 10,000 participants over seven waves, ranging from 7 to 20 years of age. Each site generated these datasets independently and our keeping the key to what they embedded into the data secret. The goal of this brainhack project is to try and determine the hidden developmental treasures hidden within each dataset.
+    issue: 9
+    categories:
+      - behavior
+      - cognition
+    leads:
+      - name: Tonya White
+        handle: tjhwhite
+    shortname: "DevTrajectories"
+
+
+  - title: "Psy2R - an R package for better inference in multivariate statistical analysis"
+    link: "https://github.com/kel-github/PSY2R"
+    image: Psy2R-logo.jpeg
+    details: |
+      We consistently use massive datasets across neuroscience and psychology. The routine gathering of big data requires that we are well equipped with tools that allow us to conduct appropriate multivariate statistics. This project aims to produce an R package that allows the researcher to overcome little discussed limitations of traditional multivariate statistical analyses.
+
+      Multivariate statistical analysis (e.g. MANOVA and repeated-measures ANOVA) typically follows a two stage procedure; an omnibus test of the global null hypothesis followed by post-hoc tests of specific effects. It is not well known that under certain circumstances, such as when the omnibus test is overpowered, that the type 1 error rate for this procedure is drastically inflated, sometimes to a type 1 error rate of 1! It is even less well known that this procedure can lead to an even lessor known type IV error, which is the incorrect interpretation of a correctly rejected hypothesis. This is caused when the follow-up contrasts are inadequate to test the question of interest, as can occur when testing simple effects.
+
+      It is possible to avoid these dragons by using an alternative procedure where all inferences are derived from simultaneous confidence intervals (SCIs) on contrasts of interests. The 'simultaneous' bit means that the same statistic contributes to both the omnibus and the contrast tests for significance, which controls the type 1 error rate. Even better, computing confidence intervals on contrasts of interests allows reseachers to move away from binary decision-making (is something significant or not?) to interpretations involving magnitude (how big is this effect likely to be at the population level?).
+
+      One piece of software (PSY) can produce SCIs appropriate for both planned analyses (where contrasts are defined independently of the data) and for more flexible analyses where contrasts are defined on a post-hoc basis. However, this software is only available for use on windows and cannot be scripted into reproducible workflows. Our goal is to build an R package that implements the functions of PSY, and to make this method of statistical inference available to the masses!
+
+      Our goals for OHBM Brainhack 2024 are:
+      1. Convert some key functions of the Psy source pascal code to R functions: these functions compute the largest contrast effect you could expect to get if the null hypothesis is true, when you have between and within repeated measures.
+      2. Explore the overlap between Psy, emmeans and MBESS, to make sure we recycle where appropriate
+      3. Replicate analyses between the original Psy software and the R implementation
+    issue: 10
+    categories:
+      - statistics
+      - documentation
+    leads:
+      - name: Kelly Garner
+        handle: kel-accords
+    shortname: "Psy2R"
+
+
+
+
 
 
   # - title: "project_title"
