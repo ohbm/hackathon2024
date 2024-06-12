@@ -36,6 +36,7 @@ projectlist:
     categories:
       - BIDS
       - Containers
+      - reproducibility
     leads:
       - name: Michelle Wang
         handle: michellewang
@@ -113,6 +114,7 @@ projectlist:
       - GLM
       - Nipype
       - SPM
+      - reproducibility
     leads:
       - name: Lefort-Besnard
         handle: jlefortbesnard
@@ -204,6 +206,72 @@ projectlist:
       - name: Kelly Garner
         handle: kel-accords
     shortname: "Psy2R"
+
+
+  - title: "Nilearn: Statistics and Machine Learning for Neuroimaging in Python"
+    link: "https://github.com/nilearn/nilearn"
+    image: Nilearn.svg
+    details: |
+      Nilearn is an open-source Python package for fast and easy analysis and visualization of MRI brain images. It provides statistical and machine-learning tools, with instructive documentation and a friendly community. It includes applications such as multi-voxel pattern analysis (MVPA), decoding, predictive modelling, functional connectivity, and brain parcellations.
+
+      Recent work in Nilearn has been centered on developing a new API to allow users to seamlessly work with surface data in a manner similar to volumetric data, enhancing support for the General Linear Model (GLM), enhancing the BIDS interface, and improving and updating the infrastructure and codebase.
+
+      We want to dedicate these Brainhack days towards direct interaction with our user-base and resolving any specific issues they might have. To this end, we encourage users to simply pop-in-and-say-hi. They are also welcome to present their queries via neurostars.org or open new issues/PRs on our GitHub repo. In addition, any interested contributors are also encouraged to work on pre-existing issues on our GitHub. To get started, new contributors should look for the "Good First Issue" or "Hackathon" labels.
+    issue: 11
+    categories:
+      - nilearn
+      - documentation
+      - statistics
+      - machine learning
+    leads:
+      - name: Himanshu Aggarwal
+        handle: man_shooo
+    shortname: "nilearn"
+
+
+  - title: "Reproinventory"
+    link: "https://github.com/repronim/reproinventory"
+    image: repronim.png
+    details: |
+      When planning for a training event for reproducible research, there are many training materials to choose from to teach tools such as git/github, bash, datalad, etc. There are inventories of such training material in some places (ReproRehab, INCF training space, Hitchhicker guide to the brain, etc) but we are lacking i) a set of tags to annotate training material (duration, targeted audience, etc) ii) a place where there can be some crowd curation and annotation of these materials.
+      We propose to develop a set of tags and an inventory of training material for reproducible neuroimaging that can be reused by other resources and be crowd-curated. This project is under the auspices of the INCF-ReproNim train the trainer fellowship.
+    issue: 12
+    categories:
+      - documentation
+      - reproducibility
+    leads:
+      - name: JB Poline
+        handle: jbpoline
+      - name: Dave Kennedy
+        handle: dnkennedy
+    shortname: "reproinventory"
+
+
+  - title: "Hack your RF coil"
+    link: "https://layerfmri.com/2024brainhack/"
+    image: rfcoil.png
+    details: |
+      There are more than 100 7T scanners installed around the world and virtually all of them are equipped with an 32ch RF coils from Nova Medical. In the last decade, this coil model has evolved from a niche engineering challenge for prototype scanners to a mainstream FDA-approved medical product. Despite the current abundance of this coil, there are no public quality metrics about it's stability, consistency across sites, nor across models of single channel transmit (sTx) and multi-channel transmit (pTx).
+
+      However, these QA metrics are vital for the upcoming transition of most 7T scanners. Namely, until now almost all 7T scanners were used as single-channel transit systems (e.g. SIEMENS Magentom 7T, classic and Terra). But the new generation of FDA-approved 7T scanners that are solely used as parallel transmit systems (e.g. SIEMENS Terra.X). While the common pTx Nova coil has been successfully validated for a number of clinical imaging protocols, it has never been compared with the sTX coil for highly accelerated fMRI protocols. 
+
+      Pilot experiments suggest that the pTx coil performs worse in tSNR limited fMRI protocols. This is despite the fact that the transmit performance is improved.
+
+      The goals of this project is to:
+      1. We cant to learn and describe basic QA procedures of 7T RF-coils.
+      3. We want to characterize the differences of noise characteristics in fMRI protocols across different coil models; pTx and sTx.
+      5. We want to engage with the community to gather and compare basic QA metrics across scanners.
+
+      We hope that these results will be informative as reference data for any 7T sights that are unsure if their SNR is at the optimal level. Furthermore, we hope that findings of this project will pave the way for cross-site large neuroimaging studies
+    issue: 13
+    categories:
+      - 7T
+      - fMRI
+      - quality control
+    leads:
+      - name: Renzo Huber
+        handle: renzohuber
+    shortname: "CoilHacker"
 
 
 

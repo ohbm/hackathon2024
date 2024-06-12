@@ -447,7 +447,7 @@ body {
         background-color: #EEE;
         .hackathon-img-wrapper {
             width: 100%;
-            height: 60%;
+            height: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -465,6 +465,7 @@ body {
             .project-tag {
                 background-color: #f2bd99;
                 color: #de5c04;
+                margin-top: 5px;
             }
             .hackathon-hidden-details{
                 display: none;
