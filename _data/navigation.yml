@@ -20,7 +20,7 @@ nav:
     link: team
 
   - title: "Venue"
-    type: "section"
+    type: "allsection"
     link: venue
 
   - title: "Contact"

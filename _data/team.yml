@@ -6,19 +6,19 @@ hackathon:
     github: sina-mansour
     twitter: Sina_Mansour_L
 
-  - name: "Qing Wang (Vincent)"
-    image: qing_wang.jpg
-    title: Hackathon Co-Chair
-    location: "Shanghai, China"
-    github: Vincent-wq
-    twitter: QingWan99752335
+  # - name: "Qing Wang (Vincent)"
+  #   image: qing_wang.jpg
+  #   title: Hackathon Co-Chair
+  #   location: "Shanghai, China"
+  #   github: Vincent-wq
+  #   twitter: QingWan99752335
 
-  - name: "Roza Gunes Bayrak"
-    image: roza_gbayrak.png
-    title: Hackathon Chair Elect
-    location: "Nashville, USA"
-    github: rgbayrak
-    twitter: redgreenblues
+  # - name: "Roza Gunes Bayrak"
+  #   image: roza_gbayrak.png
+  #   title: Hackathon Chair Elect
+  #   location: "Nashville, USA"
+  #   github: rgbayrak
+  #   twitter: redgreenblues
 
   - name: "Bruno Hebling Vieira"
     image: bruno_vieira.jpg
@@ -26,6 +26,20 @@ hackathon:
     location: "Zurich, Switzerland"
     github: bhvieira
     twitter: HeblingVieira
+
+  - name: "Niousha Dehestani"
+    image: niousha_dehestani.jpeg
+    title: Buddy System Lead
+    location: "Singapore, Singapore"
+    github: Niousha-Dehestani
+    twitter: dknewsha
+
+  - name: "Sung Min Ha"
+    image: sung_min_ha.JPG
+    title: Local Hackathon Ambassador
+    location: "St. Louis, Missouri, USA"
+    github: sungminha
+    twitter: SungMinHa1992
 
 ossig:
   - name: "Nils Muhlert"

@@ -274,6 +274,43 @@ projectlist:
     shortname: "CoilHacker"
 
 
+  - title: "WhoBPyT - Whole-Brain Modelling in PyTorch"
+    link: "https://github.com/GriffithsLab/whobpyt"
+    image: whobpyt.png
+    details: |
+      [WhoBPyT](https://github.com/GriffithsLab/whobpyt) is a Python library for connectome-based neurophysiological modelling of neuroimaging and other macroscale brain data. At its core is a deep learning-based approach for model fitting and parameter estimation, that capitalizes on the in-built algorithmic differentiation and optimization functionality of PyTorch. 
+
+      The current `WhoBPyT` code base is a consolidation of several projects that have used this computational technique to study mechanisms underlying brain dynamics in  [TMS-EEG](https://github.com/GriffithsLab/PyTepFit), [stereotactic EEG](https://github.com/Davi1990/Momi_et_al_2024), [resting-state fMRI](https://github.com/GriffithsLab/wwd-model-fitting). 
+
+      We have completed a major refactor of the code base that generalizes several key functionalities and improves overall readability. The goal of this OHBM BrainHack project is to improve the first-time user experience with `WhoBPyT`, principally through docs and tutorial examples on computational modeling of EEG and fMRI data. 
+
+    issue: 15
+    categories:
+      - EEG
+      - fMRI
+      - nilearn
+      - MNE
+      - machine learning
+    leads:
+      - name: John Griffiths
+        handle: .johngriffiths
+    shortname: "PyTorchBrainModelling"
+
+
+  - title: "Bayesian modelling in perception and action - moving towards sense of agency"
+    link: "https://github.com/CoInAct-group/SenseOfBayesiancy"
+    image: coinact.png
+    details: |
+      In this project, we aim to expand on current trends within Bayesian modeling of perception and action. Our goal is to use computational models to investigate classic theories of sense of agency. Using various open-source tools (e.g. BCI Toolbox, see https://github.com/evans1112/bcitoolbox), we will build a model that allows testing of many assumptions that underly classical and contemporary studies of sense of agency. The structure will be accessible and modular, to allow others to test their questions of interest.
+    issue: 16
+    categories:
+      - Bayesian
+    leads:
+      - name: Maud Ottenheijm
+        handle: maudottenheijm
+    shortname: "sense-of-bayesiancy"
+
+
 
 
 
