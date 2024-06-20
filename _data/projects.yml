@@ -311,6 +311,116 @@ projectlist:
     shortname: "sense-of-bayesiancy"
 
 
+  - title: "Understanding fMRI through programming"
+    link: "https://github.com/ofgulban/understanding_fMRI"
+    image: fig-Brainhack2024.webp
+    details: |
+      The aim of this project is to crate educational simulations for understanding the functional magnetic resonance imaging (fMRI) signal. We are going to create single script simulations with simple graphical user interfaces to allow self driven exploration of fundamental fMRI concepts such as magnitude, phase, T2* decay, blood oxygenation effect (BOLD), and vascular magnetic field effects. Historically critical papers, equations, and figures will be linked to these scripts to build them as entry point pedagogical devices for people who have programming experience. The long term goal of is to build this repository as an educational resource to teach MRI basics to create other teaching material such as videos. An important source of inspiration for this project is https://www.youtube.com/c/3blue1brown . Two prototypical scripts are used in the videos below which were part of a presentation that required visual beyond still figures or animations:
+        - **[Timestamp 32:35]** https://youtu.be/CeDf9YpMtLk?si=I2Ye9Btwr0Y0R1JX&t=1955
+        - **[Timestamp 43:27]** https://youtu.be/CeDf9YpMtLk?si=a1ofbstzWPTBwRbA&t=2607
+    issue: 17
+    categories:
+      - fMRI
+      - documentation
+      - preprocessing
+    leads:
+      - name: Omer Faruk Gulban
+        handle: ofgulban
+    shortname: "understand_fMRI"
+
+
+  - title: "HALFpipe: Advancing reproducible fMRI analysis based on fMRIPrep"
+    link: "https://github.com/HALFpipe/HALFpipe"
+    image: halfpipe.png
+    details: |
+      Using standardized pipelines leads to consistent results, right? We ran fMRIPrep 20.2.7 one hundred times and then calculated functional connectivity matrices using [HALFpipe](https://github.com/HALFpipe/HALFpipe). 
+
+      1. We did this in a multiverse approach where we varied which denoising strategy was applied before connectivity matrix calculation. An interesting next step here is to figure out how to quantify the variability in these matrices depending on the strategy. Are there any strategies that better than others? 
+      Any interested contributors may download the data and attempt to answer this question with us!
+      2. We would like to repeat this procedure with newer versions of fMRIPrep, and compare to the baseline that we already ran. How does the variability between versions compare to the variability within a single version? 
+      This will require some programming to load in derivatives files from different versions of fMRIPrep and then apply the Nipype workflows from HALFpipe to them. We are welcoming contributors willing to expand their familiarity with Nipype workflows in Python or BIDS derivatives.
+      4. The Enhancing Neuro Imaging Genetics through Meta Analysis (ENIGMA) Consortium conducts the largest brain imaging studies in the world, involving over 500 institutions in 45 countries worldwide. At this time, the ENIGMA Consortium has processed more than fifty thousand fMRI scans using fMRIPrep, mostly using HALFpipe as a user interface to fMRIPrep for ease of use. HALFpipe also calculates downstream results such as functional connectivity maps and matrices.
+      While fMRIPrep supports resampling fMRI data to the cortical surface, the current HALFpipe workflows [currently can not use those outputs](https://github.com/HALFpipe/HALFpipe/issues/44). We would like to change this, and have a [roadmap](https://github.com/HALFpipe/HALFpipe/issues/44) of the Nipype workflows in HALFpipe that need to be adapted. 
+      We would love to discuss the best approaches and potentially even try implementing some of the changes.
+    issue: 18
+    categories:
+      - BIDS
+      - fMRI
+      - Nipype
+      - preprocessing
+    leads:
+      - name: Violeta Céspedes
+        handle: lalalaaaavi
+      - name: Lea Waller
+        handle: wwwlea
+    shortname: "halfpipe"
+
+
+  - title: "PhysioQC: A physiological data Quality Control toolbox with physiopy"
+    link: "https://github.com/physiopy/physioqc"
+    image: physiopy_logo_1280x640.png
+    details: |
+      Physiopy is a community formed around developing solutions to operate physiological files in neuroimaging setups. The objective of this project is to get a good workflow and command line interface that generates quality analysis metrics and outputs these elements as .csv, .json files, and creates an html visual report. We additionally hope to build useful, interactive widgets and interfaces to help physio users to check and analyze their data with ease. 
+
+      All contributions are welcome and accepted, from any level of contribution. We follow the [all-contributors specification](https://allcontributors.org/docs/en/emoji-key) to report contributions, and adopt physiopy's [contributors guide](https://physiopy.github.io/community/contributor-guide/) and [code of conduct](https://physiopy.github.io/community/CODE_OF_CONDUCT/).
+    issue: 19
+    categories:
+      - git
+      - quality control
+    leads:
+      - name: Sarah Goodale
+        handle: sarahgoodale
+      - name: Roza Bayrak
+        handle: rgbayrak
+    shortname: "physiopy-qc"
+
+
+  - title: "Neurosynth Compose: Ecosystem for Reproducible Meta-Analyses"
+    link: "https://github.com/neurostuff/neurostore"
+    image: synth.png
+    details: |
+      We are aiming to make meta-analyses more systematic, reproducible, and overall less painful with an online interface and lots of pre-ingested data for you to use freely!
+
+      Our platform now hosts over 30,000 neuroimaging papers that report coordinates, making the arduous phase of transcribing coordinates simpler than ever.
+
+      We have a number of projects to work on, whether it's your first time programming or if you're a seasoned veteran.
+
+      ## Novice
+
+      - Test out our sleuth file import feature (try to break it and give feedback)
+      - Work on a script to add DOI/PMID to the sleuth files automatically
+      - Use our tutorial and give feedback
+      - Help validate paper-extracted information from GPT
+
+      ## Intermediate
+
+      - write code to create figures to do some exploratory data analysis/Validation on data we've ingested.
+      - formalize the DOI/PMID adding script into a function in NiMARE
+      - profile memory consumption in running the NiMARE reports CBMA module
+      - add documentation to publang: interface to extract information from academic papers (https://github.com/adelavega/publang)
+
+      ## Advanced
+
+      - redo the cognitive atlas python package using a more modern API generator
+      - help create a script to extract references to papers within meta-analysis papers
+      - create a [NIDM to NiMARE](https://github.com/neurostuff/NiMARE/issues/837) function
+      - Prompt Engineering/workflow design for publang to extract task information
+      - representing participant demographics in our database.
+    issue: 20
+    categories:
+      - cognition
+      - fMRI
+      - LLM
+      - documentation
+      - statistics
+    leads:
+      - name: James Kent
+        handle: jdkent
+      - name: Alejandro De La Vega
+        handle: neurozorro
+      - name: Julio Peraza
+        handle: JulioAPeraza
+    shortname: "neurosynth-compose"
 
 
 
