@@ -423,7 +423,37 @@ projectlist:
     shortname: "neurosynth-compose"
 
 
+  - title: "Injecting BIDS schema into bids2table"
+    link: "https://github.com/effigies/bids2table"
+    image: reggie-inv.png
+    details: |
+      [bids2table](https://github.com/cmi-dair/bids2table) is a BIDS indexing and query tool written in Python. It is orders of magnitude faster than PyBIDS. We did not write this, but we want to use it. Before committing to this, it would be good to make sure it's extensible as BIDS grows by building components from the [BIDS schema](https://bidsschematools.readthedocs.io/en/latest/).
 
+      We'll look into how it's written now, and see what we can do, ideally without making it slower.
+    issue: 22
+    categories:
+      - BIDS
+      - fMRI
+    leads:
+      - name: Chris Markiewicz
+        handle: effigies_
+      - name: Alejandro de la Vega
+      handle: adelavega
+    shortname: "bids2table"
+    
+
+  - title: "ChRIS-cljs"
+    link: "https://github.com/FNNDSC/chjs"
+    image: ChRISlogo-color.svg
+    details: |
+      ChRIS is a container scheduling platform for neuroscience, consisting of a core backend, a set of container scheduling microservices, interfaces to kubernetes, OpenShift, slurm, and others.. It has a rich and expressive REST API, as well as a JavaScript GUI, a javascript library and a python library. The purpose of this hack is to (start to) build a nodejs CLI using the js library to provide a REPL "shell" for ChRIS.
+    issue: 23
+    categories:
+      - Containers
+    leads:
+      - name: Rudolph Pienaar
+        handle: rudolphpienaar
+    shortname: "chris-js"
 
   # - title: "project_title"
   #   link: "project_url"
