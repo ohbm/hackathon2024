@@ -438,7 +438,7 @@ projectlist:
       - name: Chris Markiewicz
         handle: effigies_
       - name: Alejandro de la Vega
-      handle: adelavega
+        handle: adelavega
     shortname: "bids2table"
     
 
@@ -455,15 +455,16 @@ projectlist:
         handle: rudolphpienaar
     shortname: "chris-js"
 
-  # - title: "project_title"
-  #   link: "project_url"
-  #   image: hands.jpg
-  #   details: |
-  #     multiline details
-  #   issue: issue
-  #   categories:
-  #     - cats
-  #   leads:
-  #     - name: lead_name
-  #       handle: discord_handle
-  #   shortname: "project_name"
+
+# - title: "project_title"
+#   link: "project_url"
+#   image: hands.jpg
+#   details: |
+#     multiline details
+#   issue: issue
+#   categories:
+#     - cats
+#   leads:
+#     - name: lead_name
+#       handle: discord_handle
+#   shortname: "project_name"
