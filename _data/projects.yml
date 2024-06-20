@@ -438,7 +438,7 @@ projectlist:
       - name: Chris Markiewicz
         handle: effigies_
       - name: Alejandro de la Vega
-      handle: adelavega
+        handle: adelavega
     shortname: "bids2table"
     
 
