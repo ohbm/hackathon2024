@@ -1,0 +1,372 @@
+[
+  {
+    "title": "ChRIS-cljs",
+    "goals": "ChRIS is a container scheduling platform for neuroscience, consisting of a core backend, a set of container scheduling microservices, interfaces to kubernetes, OpenShift, slurm, and others.. It has a rich and expressive REST API, as well as a JavaScript GUI, a javascript library and a python library. The purpose of this hack is to (start to) build a nodejs CLI using the js library to provide a REPL \"shell\" for ChRIS.",
+    "link": "https://github.com/FNNDSC/chjs",
+    "website-image": "https://github.com/FNNDSC/cube-design/blob/master/_common-assets/ChRISlogo-color.svg",
+    "project-leads": "Rudolph Pienaar, @rudolphpienaar",
+    "hub": "Seoul",
+    "pitch": null,
+    "otherhub": [],
+    "skills": "\"CLI usage\"\nJavaScript / nodejs",
+    "tutorials": null,
+    "issues": null,
+    "twiter": null,
+    "chatchannel": "chris-js",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/23",
+    "issue_number": 23
+  },
+  {
+    "title": "Injecting BIDS schema into bids2table",
+    "goals": "[bids2table](https://github.com/cmi-dair/bids2table) is a BIDS indexing and query tool written in Python. It is orders of magnitude faster than PyBIDS. We did not write this, but we want to use it. Before committing to this, it would be good to make sure it's extensible as BIDS grows by building components from the [BIDS schema](https://bidsschematools.readthedocs.io/en/latest/).\nWe'll look into how it's written now, and see what we can do, ideally without making it slower.",
+    "link": "https://github.com/effigies/bids2table",
+    "website-image": "https://raw.githubusercontent.com/nipraxis/textbook/main/images/reggie-inv.png",
+    "project-leads": "@effigies / @adelavega",
+    "hub": "Seoul",
+    "pitch": null,
+    "otherhub": [],
+    "skills": "Python",
+    "tutorials": null,
+    "issues": null,
+    "twiter": null,
+    "chatchannel": "bids2table",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/22",
+    "issue_number": 22
+  },
+  {
+    "title": "Neurosynth Compose: Ecosystem for Reproducible Meta-Analyses",
+    "goals": "We are aiming to make meta-analyses more systematic, reproducible, and overall less painful with an online interface and lots of pre-ingested data for you to use freely!\nOur platform now hosts over 30,000 neuroimaging papers that report coordinates, making the arduous phase of transcribing coordinates simpler than ever.\nWe have a number of projects to work on, whether it's your first time programming or if you're a seasoned veteran.\n## Novice\n- Test out our sleuth file import feature (try to break it and give feedback)\n- Work on a script to add DOI/PMID to the sleuth files automatically\n- Use our tutorial and give feedback\n- Help validate paper-extracted information from GPT\n## Intermediate\n- write code to create figures to do some exploratory data analysis/Validation on data we've ingested.\n- formalize the DOI/PMID adding script into a function in NiMARE\n- profile memory consumption in running the NiMARE reports CBMA module\n- add documentation to publang: interface to extract information from academic papers (https://github.com/adelavega/publang)\n## Advanced\n- redo the cognitive atlas python package using a more modern API generator\n- help create a script to extract references to papers within meta-analysis papers\n- create a [NIDM to NiMARE](https://github.com/neurostuff/NiMARE/issues/837) function\n- Prompt Engineering/workflow design for publang to extract task information\n- representing participant demographics in our database.",
+    "link": "https://github.com/neurostuff/neurostore",
+    "website-image": "https://github.com/neurostuff/neurostore/blob/master/compose/neurosynth-frontend/public/static/synth.png",
+    "project-leads": "James Kent @jdkent jdkent\nAlejandro De La Vega  @adelavega neurozorro\nJulio Peraza @JulioAPeraza N/A",
+    "hub": "Seoul",
+    "pitch": null,
+    "otherhub": [
+      "Hybrid (Americas)"
+    ],
+    "skills": "- None\n- Ran a meta-analysis before (using any technology)\n- written a bash script\n- read in files with python\n- use plotting libraries with python\n- created a pull request using git/github",
+    "tutorials": null,
+    "issues": null,
+    "twiter": "If you're interested in or learning about meta-analyses, AI, data engineering, and everything in between, come checkout Neurosynth Compose! We have projects for every skill level.",
+    "chatchannel": "neurosynth-compose",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/20",
+    "issue_number": 20
+  },
+  {
+    "title": "PhysioQC: A physiological data Quality Control toolbox with physiopy",
+    "goals": "Physiopy is a community formed around developing solutions to operate physiological files in neuroimaging setups. The objective of this project is to get a good workflow and command line interface that generates quality analysis metrics and outputs these elements as .csv, .json files, and creates an html visual report. We additionally hope to build useful, interactive widgets and interfaces to help physio users to check and analyze their data with ease.\nAll contributions are welcome and accepted, from any level of contribution. We follow the [all-contributors specification](https://allcontributors.org/docs/en/emoji-key) to report contributions, and adopt physiopy's [contributors guide](https://physiopy.github.io/community/contributor-guide/) and [code of conduct](https://physiopy.github.io/community/CODE_OF_CONDUCT/).",
+    "link": "https://github.com/physiopy/physioqc",
+    "website-image": "https://github.com/physiopy/phys2bids/blob/master/docs/_static/physiopy_logo_1280x640.png?raw=true",
+    "project-leads": "Sarah Goodale, Github: goodalse2019, Discord: sarahgoodale\nRoza Bayrak, Github: rgbayrak, Discord: rgbayrak (virtual, asynchronous in CST)",
+    "hub": "Seoul",
+    "pitch": null,
+    "otherhub": [
+      "Hybrid (Americas)"
+    ],
+    "skills": "We welcome all contributors and contributions, from any skillset and level.\nNo prior git knowledge necessary, if willing to learn on the spot!\nKnowledge of python helpful\nCLI: basic\nVisualization: intermediate\nInteractive visualization: super helpful but not required!",
+    "tutorials": "Set up a brainhack friendly computing enviornment\nPython: Writing a script\nPython: Visualisation\nVCS: Using Git and Github",
+    "issues": "- Develop a gallery of physiological data examples good and bad\n- Adding basic set of visualizations\n- Implementation of the workflow",
+    "twiter": "PhysioQC: A physiological data Quality Control toolbox with physiopy\n#OHBMHackathon #Brainhack #OHBM2023 #Physiopy",
+    "chatchannel": "physiopy-qc",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/19",
+    "issue_number": 19
+  },
+  {
+    "title": "HALFpipe: Advancing reproducible fMRI analysis based on fMRIPrep",
+    "goals": "Using standardized pipelines leads to consistent results, right? We ran fMRIPrep 20.2.7 one hundred times and then calculated functional connectivity matrices using [HALFpipe](https://github.com/HALFpipe/HALFpipe).\n1. We did this in a multiverse approach where we varied which denoising strategy was applied before connectivity matrix calculation. An interesting next step here is to figure out how to quantify the variability in these matrices depending on the strategy. Are there any strategies that better than others?\nAny interested contributors may download the data and attempt to answer this question with us!\n2. We would like to repeat this procedure with newer versions of fMRIPrep, and compare to the baseline that we already ran. How does the variability between versions compare to the variability within a single version?\nThis will require some programming to load in derivatives files from different versions of fMRIPrep and then apply the Nipype workflows from HALFpipe to them. We are welcoming contributors willing to expand their familiarity with Nipype workflows in Python or BIDS derivatives.\n4. The Enhancing Neuro Imaging Genetics through Meta Analysis (ENIGMA) Consortium conducts the largest brain imaging studies in the world, involving over 500 institutions in 45 countries worldwide. At this time, the ENIGMA Consortium has processed more than fifty thousand fMRI scans using fMRIPrep, mostly using HALFpipe as a user interface to fMRIPrep for ease of use. HALFpipe also calculates downstream results such as functional connectivity maps and matrices.\nWhile fMRIPrep supports resampling fMRI data to the cortical surface, the current HALFpipe workflows [currently can not use those outputs](https://github.com/HALFpipe/HALFpipe/issues/44). We would like to change this, and have a [roadmap](https://github.com/HALFpipe/HALFpipe/issues/44) of the Nipype workflows in HALFpipe that need to be adapted.\nWe would love to discuss the best approaches and potentially even try implementing some of the changes.",
+    "link": "https://github.com/HALFpipe/HALFpipe",
+    "website-image": "![image1](https://github.com/ohbm/hackathon2024/assets/789054/0ebed2b1-99c1-4efd-8f3a-2d81421689e9)",
+    "project-leads": "| Name             | GitHub           | Discord      |\n|------------------|------------------|--------------|\n| Violeta C\u00e9spedes | @lalalavi        | @lalalaaaavi |\n| Lea Waller       | @HippocampusGirl | @wwwlea      |",
+    "hub": "Seoul",
+    "pitch": null,
+    "otherhub": [],
+    "skills": "| Necessary | Not necessary                                 |\n|-----------|-----------------------------------------------|\n| Python    | Nipype<br>Brain Imaging Data Structure (BIDS) |",
+    "tutorials": null,
+    "issues": null,
+    "twiter": null,
+    "chatchannel": "halfpipe",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/18",
+    "issue_number": 18
+  },
+  {
+    "title": "Understanding fMRI through programming",
+    "goals": "The aim of this project is to crate educational simulations for understanding the functional magnetic resonance imaging (fMRI) signal. We are going to create single script simulations with simple graphical user interfaces to allow self driven exploration of fundamental fMRI concepts such as magnitude, phase, T2* decay, blood oxygenation effect (BOLD), and vascular magnetic field effects. Historically critical papers, equations, and figures will be linked to these scripts to build them as entry point pedagogical devices for people who have programming experience. The long term goal of is to build this repository as an educational resource to teach MRI basics to create other teaching material such as videos. An important source of inspiration for this project is https://www.youtube.com/c/3blue1brown . Two prototypical scripts are used in the videos below which were part of a presentation that required visual beyond still figures or animations:\n- **[Timestamp 32:35]** https://youtu.be/CeDf9YpMtLk?si=I2Ye9Btwr0Y0R1JX&t=1955\n- **[Timestamp 43:27]** https://youtu.be/CeDf9YpMtLk?si=a1ofbstzWPTBwRbA&t=2607",
+    "link": "https://github.com/ofgulban/understanding_fMRI",
+    "website-image": "https://drive.google.com/file/d/1o6eSz0wkyQLYrZsfjAeMGIxqXJ2_yl82/view?usp=sharing",
+    "project-leads": "Github: ofgulban\nDiscord: ofgulban",
+    "hub": "Seoul",
+    "pitch": null,
+    "otherhub": [],
+    "skills": "Programming experience (any language is fine but Python will be used)",
+    "tutorials": "- [X] [Set up a brainhack friendly computing environment](https://school-brainhack.github.io/modules/installation/)\n- [X] [Python: Writing a script](https://school-brainhack.github.io/modules/python_scripts/)\n- [X] [Python: Data analysis with Python](https://school-brainhack.github.io/modules/python_data_analysis/)\n- [X] [Python: Visualisation](https://school-brainhack.github.io/modules/python_visualization/)",
+    "issues": null,
+    "twiter": null,
+    "chatchannel": "understand_fMRI",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/17",
+    "issue_number": 17
+  },
+  {
+    "title": "WhoBPyT - Whole-Brain Modelling in PyTorch",
+    "goals": "[WhoBPyT](https://github.com/GriffithsLab/whobpyt) is a Python library for connectome-based neurophysiological modelling of neuroimaging and other macroscale brain data. At its core is a deep learning-based approach for model fitting and parameter estimation, that capitalizes on the in-built algorithmic differentiation and optimization functionality of PyTorch.\nThe current `WhoBPyT` code base is a consolidation of several projects that have used this computational technique to study mechanisms underlying brain dynamics in  [TMS-EEG](https://github.com/GriffithsLab/PyTepFit), [stereotactic EEG](https://github.com/Davi1990/Momi_et_al_2024), [resting-state fMRI](https://github.com/GriffithsLab/wwd-model-fitting).\nWe have completed a major refactor of the code base that generalizes several key functionalities and improves overall readability. The goal of this OHBM BrainHack project is to improve the first-time user experience with `WhoBPyT`, principally through docs and tutorial examples on computational modeling of EEG and fMRI data.",
+    "link": "https://github.com/GriffithsLab/whobpyt",
+    "website-image": "https://drive.google.com/uc?export=view&id=1wJaFEEk6hDfeOCjix2v_BhmWmNak9VzO",
+    "project-leads": "John Griffiths",
+    "hub": "Seoul",
+    "pitch": "Pitch video will be added ahead of the event.",
+    "otherhub": [
+      "Hybrid (Americas)"
+    ],
+    "skills": "Python\nPyTorch\nGithub\nEEG\nfMRI\nMNE\nNilearn\nNumerical simulation\nReading+writing",
+    "tutorials": "OHBM brain modelling edu course - https://griffithslab.github.io/OHBM2024-educational-course/",
+    "issues": "- Test the EEG/fMRI modelling examples\n- Run examples with alternative data\n- Improve data visualization in examples\n- Add any missing docstrings\n- Add missing items to the README\n- ...",
+    "twiter": null,
+    "chatchannel": "PyTorchBrainModelling",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/15",
+    "issue_number": 15
+  },
+  {
+    "title": "Hack your RF coil",
+    "goals": "There are more than 100 7T scanners installed around the world and virtually all of them are equipped with an 32ch RF coils from Nova Medical. In the last decade, this coil model has evolved from a niche engineering challenge for prototype scanners to a mainstream FDA-approved medical product. Despite the current abundance of this coil, there are no public quality metrics about it's stability, consistency across sites, nor across models of single channel transmit (sTx) and multi-channel transmit (pTx).\nHowever, these QA metrics are vital for the upcoming transition of most 7T scanners. Namely, until now almost all 7T scanners were used as single-channel transit systems (e.g. SIEMENS Magentom 7T, classic and Terra). But the new generation of FDA-approved 7T scanners that are solely used as parallel transmit systems (e.g. SIEMENS Terra.X). While the common pTx Nova coil has been successfully validated for a number of clinical imaging protocols, it has never been compared with the sTX coil for highly accelerated fMRI protocols.\nPilot experiments suggest that the pTx coil performs worse in tSNR limited fMRI protocols. This is despite the fact that the transmit performance is improved.\nThe goals of this project is to:\n1. We cant to learn and describe basic QA procedures of 7T RF-coils.\n3. We want to characterize the differences of noise characteristics in fMRI protocols across different coil models; pTx and sTx.\n5. We want to engage with the community to gather and compare basic QA metrics across scanners.\nWe hope that these results will be informative as reference data for any 7T sights that are unsure if their SNR is at the optimal level. Furthermore, we hope that findings of this project will pave the way for cross-site large neuroimaging studies",
+    "link": "https://layerfmri.com/2024brainhack/",
+    "website-image": "https://layerfmri.com/wp-content/uploads/2024/06/screen-shot-2024-06-11-at-14.18.09.png",
+    "project-leads": "Github: layerfmri\nDiscord: renzohuber",
+    "hub": "Hybrid (Americas)",
+    "pitch": "[https://youtu.be/F6DvXUi6cis](https://youtu.be/F6DvXUi6cis)",
+    "otherhub": [],
+    "skills": "Attendees need to have access to a 7T scanner and need to be certified to operate it.",
+    "tutorials": "Follow the Tutorial on how to switch your scanner from sTx to pTx and back: [https://layerfmri.com/2024brainhack/](https://layerfmri.com/2024brainhack/)",
+    "issues": "Good first issue: **execute basic Coil QA**\nOn all SIEMENS scanners, there is a standardized protocol that conveniently generates the most basic quality metric of any receive coil: coil_utils.\nIt can be found in the Dot-Cockpit under: default, Sequence region, Service Sequences, Default, coil_util.\nProtocol PDF and improtable exar1 files for VE12U are available here: [https://github.com/layerfMRI/Sequence_Github/tree/master/Coil_util_examples.](https://github.com/layerfMRI/Sequence_Github/tree/master/Coil_util_examples.)\nExample results of this first issue are shown here: [https://layerfmri.com/2024brainhack/](https://layerfmri.com/2024brainhack/)",
+    "twiter": "Hack your 7T RF-coil\nThis project looks under the hood of 7T RF-coils. How stable are they acorss sites and across single-channel and multi-channel models?\n@layerfmri\n#OHBMHackathon #Brainhack #OHBM2024 #OHBM_Brainhack_2024",
+    "chatchannel": "CoilHacker",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/13",
+    "issue_number": 13
+  },
+  {
+    "title": "Reproinventory",
+    "goals": "When planning for a training event for reproducible research, there are many training materials to choose from to teach tools such as git/github, bash, datalad, etc. There are inventories of such training material in some places (ReproRehab, INCF training space, Hitchhicker guide to the brain, etc) but we are lacking i) a set of tags to annotate training material (duration, targeted audience, etc) ii) a place where there can be some crowd curation and annotation of these materials.\nWe propose to develop a set of tags and an inventory of training material for reproducible neuroimaging that can be reused by other resources and be crowd-curated. This project is under the auspices of the INCF-ReproNim train the trainer fellowship.",
+    "link": "https://github.com/repronim/reproinventory",
+    "website-image": "https://github.com/ReproNim/artwork/blob/master/logo/logo-512.png",
+    "project-leads": "JB Poline / GH: jbpoline / Discord: jbpoline\nDave Kennedy / GH: dnkennedy / Discord : dnkennedy",
+    "hub": "Seoul",
+    "pitch": "https://github.com/repronim/reproinventory",
+    "otherhub": [
+      "Hybrid (Americas)"
+    ],
+    "skills": "No specific skills are require, only the desire to work on training material for reproducible research",
+    "tutorials": null,
+    "issues": null,
+    "twiter": null,
+    "chatchannel": "reproinventory",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/12",
+    "issue_number": 12
+  },
+  {
+    "title": "Nilearn: Statistics and Machine Learning for Neuroimaging in Python",
+    "goals": "Nilearn is an open-source Python package for fast and easy analysis and visualization of MRI brain images. It provides statistical and machine-learning tools, with instructive documentation and a friendly community. It includes applications such as multi-voxel pattern analysis (MVPA), decoding, predictive modelling, functional connectivity, and brain parcellations.\nRecent work in Nilearn has been centered on developing a new API to allow users to seamlessly work with surface data in a manner similar to volumetric data, enhancing support for the General Linear Model (GLM), enhancing the BIDS interface, and improving and updating the infrastructure and codebase.\nWe want to dedicate these Brainhack days towards direct interaction with our user-base and resolving any specific issues they might have. To this end, we encourage users to simply pop-in-and-say-hi. They are also welcome to present their queries via neurostars.org or open new issues/PRs on our GitHub repo. In addition, any interested contributors are also encouraged to work on pre-existing issues on our GitHub. To get started, new contributors should look for the \"Good First Issue\" or \"Hackathon\" labels.",
+    "link": "https://github.com/nilearn/nilearn",
+    "website-image": "https://drive.google.com/file/d/1c2AcPvCCRWy80Se2m_lfVIlJc_1laon2/view?usp=sharing",
+    "project-leads": "Himanshu Aggarwal, Github: @man-shu, Discord: man_shooo",
+    "hub": "Seoul",
+    "pitch": null,
+    "otherhub": [],
+    "skills": "We welcome all users and contributions from various skill sets and levels. This can include opening discussions around improvements to the [documentation](https://nilearn.github.io/stable/index.html) and/or [code base](https://github.com/nilearn/nilearn\n), answering or commenting on questions or [issues raised on github](https://github.com/nilearn/nilearn/issues/4434) and [neurostars](https://neurostars.org/tag/nilearn), reviewing [pull requests](https://github.com/nilearn/nilearn/pulls), and [contributing code](https://nilearn.github.io/stable/development.html#how-to-contribute-to-nilearn).",
+    "tutorials": "We recommend starting with [Nilearn's basic tutorials](https://nilearn.github.io/stable/auto_examples/00_tutorials/index.html#) and the [introduction to Nilearn](https://nilearn.github.io/stable/introduction.html). This would help new users and contributors familiarize themselves with the package and its functionalities. They can even provide feedback on the tutorials and suggest improvements.",
+    "issues": "Here are a few issues:\n- [Use nilearn's logger instead of print statement](https://github.com/nilearn/nilearn/issues/4443)\n- [Add scripts to collect stats for the nilearn repo](https://github.com/nilearn/nilearn/issues/3791).\n- [Update missing default value in docstrings](https://github.com/nilearn/nilearn/issues/3865)\n- [Write tests for existing functions](https://github.com/nilearn/nilearn/issues/2750)\n- [Add jupyterlite links to example gallery notebooks](https://github.com/nilearn/nilearn/issues/3951)\nYou can also find an updated list of issues for the Brainhack [here](https://github.com/nilearn/nilearn/issues?q=is:open+is:issue+label:Hackathon)\nDepending upon your comfort level with the package, issues can also be filtered as follows:\n- [Good first issues](https://github.com/nilearn/nilearn/labels/Good%20first%20issue)\n- [Effort: Low](https://github.com/nilearn/nilearn/labels/Effort%3A%20low)\n- [Effort: Medium](https://github.com/nilearn/nilearn/labels/Effort%3A%20medium)\n- [Effort: High](https://github.com/nilearn/nilearn/labels/Effort%3A%20high)",
+    "twiter": "With @nilearn, we aim to simplify statistical analysis and machine learning on brain images in Python by fostering an open user base and active contributing community.\nFind us @OHBM @brainhackorg in Seoul, Korea, from June 20th to 22nd 2024.\nhttps://nilearn.github.io/stable/index.htmluser base",
+    "chatchannel": "nilearn",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/11",
+    "issue_number": 11
+  },
+  {
+    "title": "Psy2R - an R package for better inference in multivariate statistical analysis",
+    "goals": "We consistently use massive datasets across neuroscience and psychology. The routine gathering of big data requires that we are well equipped with tools that allow us to conduct appropriate multivariate statistics. This project aims to produce an R package that allows the researcher to overcome little discussed limitations of traditional multivariate statistical analyses.\nMultivariate statistical analysis (e.g. MANOVA and repeated-measures ANOVA) typically follows a two stage procedure; an omnibus test of the global null hypothesis followed by post-hoc tests of specific effects. It is not well known that under certain circumstances, such as when the omnibus test is overpowered, that the type 1 error rate for this procedure is drastically inflated, sometimes to a type 1 error rate of 1! It is even less well known that this procedure can lead to an even lessor known type IV error, which is the incorrect interpretation of a correctly rejected hypothesis. This is caused when the follow-up contrasts are inadequate to test the question of interest, as can occur when testing simple effects.\nIt is possible to avoid these dragons by using an alternative procedure where all inferences are derived from simultaneous confidence intervals (SCIs) on contrasts of interests. The 'simultaneous' bit means that the same statistic contributes to both the omnibus and the contrast tests for significance, which controls the type 1 error rate. Even better, computing confidence intervals on contrasts of interests allows reseachers to move away from binary decision-making (is something significant or not?) to interpretations involving magnitude (how big is this effect likely to be at the population level?).\nOne piece of software (PSY) can produce SCIs appropriate for both planned analyses (where contrasts are defined independently of the data) and for more flexible analyses where contrasts are defined on a post-hoc basis. However, this software is only available for use on windows and cannot be scripted into reproducible workflows. Our goal is to build an R package that implements the functions of PSY, and to make this method of statistical inference available to the masses!\nOur goals for OHBM Brainhack 2024 are:\n1. Convert some key functions of the Psy source pascal code to R functions: these functions compute the largest contrast effect you could expect to get if the null hypothesis is true, when you have between and within repeated measures.\n2. Explore the overlap between Psy, emmeans and MBESS, to make sure we recycle where appropriate\n3. Replicate analyses between the original Psy software and the R implementation",
+    "link": "https://github.com/kel-github/PSY2R",
+    "website-image": "https://github.com/kel-github/PSY2R/blob/main/presentations/Psy2R-logo.jpeg",
+    "project-leads": "Kelly Garner\nGithub: [kel-github](https://github.com/kel-github)\nDiscord: @kel-accords",
+    "hub": "Seoul",
+    "pitch": null,
+    "otherhub": [],
+    "skills": "Coding skills in R\nPackage development in R\nUnderstanding of, experience in, or curiosity with multivariate statistical analysis\nUnderstanding of, experience in, or curiosity with analysis of repeated-measures data (i.e. ANOVA+)\nA desire for tools for better statistical inferences\nA love of documentation and/or sensible naming of variables\nEsoteric coding skills - i.e. pascal",
+    "tutorials": "https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project\nhttps://github.com/kel-github/PSY2R/blob/main/resources/PSYHELP.pdf\nhttps://marissabarlaz.github.io/portfolio/contrastcoding/\nhttps://rvlenth.github.io/emmeans/reference/emmeans-package.html\nhttps://www.youtube.com/watch?v=gfPP2pQ8Rms",
+    "issues": "https://github.com/kel-github/PSY2R/issues/33\nhttps://github.com/kel-github/PSY2R/issues/34\nhttps://github.com/kel-github/PSY2R/issues/12",
+    "twiter": "Psy2R - an R package for better inference in multivariate statistical analysis. We're making a package to reduce type 1 and type 4 errors in multivariate analysis - for the people!",
+    "chatchannel": "Psy2R",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/10",
+    "issue_number": 10
+  },
+  {
+    "title": "What do we really know about the interplay between brain, behavior, and cognition from childhood to early adulthood? Playing with existing shared simulated datasets",
+    "goals": "As a part of a study to examine the interplay between brain, behavior, and cognition, seven sites internationally have simulated longitudinal datasets of how they envision these interactions to occur. Each site generated three sets of of data, each with 10,000 participants over seven waves, ranging from 7 to 20 years of age. Each site generated these datasets independently and our keeping the key to what they embedded into the data secret. The goal of this brainhack project is to try and determine the hidden developmental treasures hidden within each dataset.",
+    "link": "https://socoden.github.io/Simulation/",
+    "website-image": "https://github.com/tjhwhite/tjhwhite/blob/main/Brainhack_Longitudinal_Logo.png",
+    "project-leads": "Tonya White\nGitHub Account: tjhwhite\nDiscord Acct: tjhwhite",
+    "hub": "Seoul",
+    "pitch": null,
+    "otherhub": [],
+    "skills": "Knowledge of either R or python and some background and knowledge into longitudinal statistical models are welcome.",
+    "tutorials": null,
+    "issues": null,
+    "twiter": "Extracting the interplay between brain and behavior in simulated longitudinal datasets of development... A Brainhack adventure!",
+    "chatchannel": "DevTrajectories",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/9",
+    "issue_number": 9
+  },
+  {
+    "title": "Neuroimaging zombies",
+    "goals": "The Neuroimaging zombies projects aims at providing guidelines on how to test whether an effect from the literature is replicable (more than reproducible), and how to prevent our own results to turn into irreplicable effects.\nWe propose to work on our 3 axes:\n- preprocess a public dataset with your favourite tool and upload the results to GIN\n- work on reference Quality Control\n- work on the reference pipelines for some well established neuroimaging results\nJoin our Mattermost channel at [brainhack.org](https://mattermost.brainhack.org/brainhack/channels/neuroimaging-zombies), and check these slides to learn more about the project at [osf.io](https://osf.io/fvqn7/).",
+    "link": "https://github.com/neuroanatomy/neuroimaging-zombies-ohbm-2024/",
+    "website-image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/MOREmoji_zombie.svg",
+    "project-leads": "Elisabeth Dillies, brainhack mattermost: eli\nRoberto Toro, brainhack mattermost: r03ert0\nKatja Heuer, brainhack mattermost: katja\nNicolas Traut, brainhack mattermost: ntraut\nAnita Beggiato, brainhack mattermost: nta",
+    "hub": "Hybrid (Europe / Middle East / Africa)",
+    "pitch": null,
+    "otherhub": [],
+    "skills": "Depending on which subproject you wish to be involved in, it can be helpful to have basic knowledge on:\n- bash/terminal & git\n- preprocessing tools\n- quality control\nBut the most required skill is enthusiasm about discussion and open science!",
+    "tutorials": "Datalad handbook: https://handbook.datalad.org/en/latest/basics/intro.html (not mandatory at all)",
+    "issues": null,
+    "twiter": null,
+    "chatchannel": "brainhack mattermost channel: neuroimaging-zombies",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/8",
+    "issue_number": 8
+  },
+  {
+    "title": "IDEAS: Interactive data exploration and analytics system",
+    "goals": "Develop and use bots+LLMs+agents to query the graph stores, create an analysis strategy to answer the question, and/or search some literature. For a general review/overview of agent-based systems see the figures here: https://arxiv.org/pdf/2404.02831",
+    "link": "https://github.com/ReproNim/probable-journey",
+    "website-image": "https://github.com/ReproNim/probable-journey/blob/main/probable-journey-icon-square.png?raw=true",
+    "project-leads": "satra",
+    "hub": "Seoul",
+    "pitch": null,
+    "otherhub": [],
+    "skills": "Technical skills: python\nWilling to learn: LLMs, huggingface/langchain, NLP, RAGs\nDomain skills: neuroimaging, brain-behavior relations",
+    "tutorials": null,
+    "issues": null,
+    "twiter": null,
+    "chatchannel": "brain-bot",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/7",
+    "issue_number": 7
+  },
+  {
+    "title": "The BIDS connectivity project - finalization of BEPs",
+    "goals": "Besides `BIDS`' success, expansion, and description of multiple data modalities, gaps still exist in developing the standard to effectively support the process of scientific results reporting. Among others, this prominently refers to data obtained through and during connectivity analyses. This comprises brain parcellations, connectivity maps, structural and functional connections, major white matter tracts, diffusion signal models, white matter tractograms and tractometry, as well as networks based on dimensionality reduction. Sharing processed data and features in addition to raw and minimally processed data is critical to accelerating scientific discovery. This is because substantial effort, software, and hardware instrumentation, and know-how are required to bring raw data to a usable state. The aim of the present project is to extend the BIDS standard to encompass derivatives resulting from experiments related to macroscopic brain connectivity (U.S. National Institutes of Health NIMH R01-MH126699). During the Brainhack, we would like to\n- Finalize the existing BEPs ([BEP17 - Relationship matrices](https://docs.google.com/document/d/1ugBdUF6dhElXdj3u9vw0iWjE6f_Bibsro3ah7sRV0GA/edit?usp=sharing), [BEP38 - Atlases](https://github.com/bids-standard/bids-specification/pull/1714), [BEP39 - Dimensionality reduction-based networks](https://docs.google.com/document/d/1GTWsj0MFQedXjOaNk6H0or6IDVFyMAysrJ9I4Zmpz2E/edit?usp=sharing))\n- Gather feedback from experts, users, tool developers, ie everyone!\n- Discuss next steps, e.g. software integrations",
+    "link": "https://pestillilab.github.io/bids-connectivity/",
+    "website-image": "https://pestillilab.github.io/bids-connectivity/img/logo.svg",
+    "project-leads": "Peer Herholz, GitHub: [peerherholz](https://github.com/peerherholz), discord: peerherholz\nFranco Pestilli, GitHub: [francopestilli](https://github.com/francopestilli), discord:\nAriel Rokem, GitHub: [arokem](https://github.com/arokem), discord",
+    "hub": "Seoul",
+    "pitch": null,
+    "otherhub": [],
+    "skills": "Experience with one of our covered data modalities and respective analysis software packages would be helpful: `s/fMRI`, `dMRI`, `PET`, `MEG`, `i/EEG`. Additionally, knowledge of `BIDS` would come in handy.\nHowever, these are not requirements: we're happy to welcome everyone interested.",
+    "tutorials": null,
+    "issues": null,
+    "twiter": "Interested in Brain connectivity and FAIR data? The [BIDS connectivity project](https://pestillilab.github.io/bids-connectivity/) might be of interest to you! During the Brainhack we will discuss work on the different connectivity-related BIDS Extension Proposals (BEPs) and welcome support from all interested parties!",
+    "chatchannel": "bids-connectivity",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/5",
+    "issue_number": 5
+  },
+  {
+    "title": "BIDS 2.0",
+    "goals": "- triage more issues from https://github.com/bids-standard/bids-2-devel/issues : categorize into ToDo, Punted (close), BIDS 3.0\n- progress forward on \"ToDo\" or \"In Progress\" items of the BIDS 2.0 project: https://github.com/orgs/bids-standard/projects/10, in particular (but not limited to)\n- https://github.com/bids-standard/bids-specification/pull/1775\n- https://github.com/bids-standard/bids-specification/pull/1809",
+    "link": "https://bids.neuroimaging.io",
+    "website-image": "https://github.com/bids-standard/animated-bids-logo/blob/master/bids-animated.gif",
+    "project-leads": "Yaroslav O. Halchenko @yarikoptic discord: yarikoptic",
+    "hub": "Seoul",
+    "pitch": null,
+    "otherhub": [],
+    "skills": "- BIDS and  [BIDS schema](https://github.com/bids-standard/bids-specification/tree/master/src/schema/) to help triaging issues, deciding on the direction to proceed, and implementing the changes\n- Tech writing to ensure best language to express ideas\n- Python programming for https://github.com/bids-standard/bids-specification/tree/master/tools/schemacode tune ups\n- adjustments to schema handling\n- improving migration code\n- extending testing\n- TypeScript programming  for https://github.com/bids-standard/bids-validator tune ups to deno flavor of the validator",
+    "tutorials": "- https://bids-standard.github.io/bids-starter-kit/",
+    "issues": null,
+    "twiter": null,
+    "chatchannel": "bids-2.0",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/3",
+    "issue_number": 3
+  },
+  {
+    "title": "Poppy & Bagel: How to FAIRly curate, process, and share your neuroimaging datasets",
+    "goals": "Curating data, running reproducible pipelines, creating data dictionaries, integrating data from collaborators, making sensitive data FAIR - these tasks are hard; and we all have to deal with them every day. Here we aim to serve Nipoppy and Neurobagel - a set of protocols and tools with modular framework that one can adopt as needed to simplify common data organization, processing, harmonization, and sharing tasks on neuroimaging datasets.\nWe cover BIDSification, containerized processing with completion tracking, annotation of phenotypic data, and generation of knowledge graphs for distributed data discovery and sharing.\nThis is a useful project for those who:\n- Feel frustrated replicating work by others or even reproducing your own work from 6 months ago\n- Struggle with BIDSification of data\n- Spend endless hours trying to match column names in tabular data files\n- Work with multi-site datasets\n- Support open-science but work with datasets that have privacy issues\n- Want to create a community to build a common ecosystem\n**_We have experienced all these issues ourselves in the past, and so we are here to prevent future grief to newcomers!_**",
+    "link": "https://nipoppy.readthedocs.io/en/latest/index.html",
+    "website-image": "https://raw.githubusercontent.com/neurobagel/documentation/main/docs/imgs/logo/neurobagel_logo.png",
+    "project-leads": "Michelle Wang: michellewang\nBrent McPherson: bcmcpher\nSebastian Urchs: surchs\nNikhil Bhagwat: nikhil153",
+    "hub": "Seoul",
+    "pitch": "https://docs.google.com/presentation/d/10cXPlcPPVaShkpH-Mw1vNuk-iNA4ruDfoYrMAA6Llmg/edit?usp=sharing",
+    "otherhub": [],
+    "skills": "This is for anyone looking to adopt and contribute to the best practices for neuroimaging data workflows. If you wrangle with data, you can contribute! Technical skills are useful but not a strong prerequisite.\nTechnical\n- Bash - familiarity with Terminal\n- Python - familiarity with pandas\n- Containers - familiarity with running Singularity/Apptainer containers (no need to build them)\n- BIDS: familiarly with the specification [Neurobagel_high_level_overview](https://docs.google.com/presentation/d/1dyRJkJWVwEBSU5CPqj-GuD5Jw_csltOULvGqVswycGc/edit?usp=sharing)\nNon-technical\n- Belief in reproducible and open science!",
+    "tutorials": null,
+    "issues": null,
+    "twiter": "Poppy & Bagel: How to FAIRly curate, process, and share your neuroimaging datasets\nhttps://github.com/neurodatascience/nipoppy\n@michelle__wang\n#OHBMHackathon #Brainhack #OHBM2024 #OHBM_Brainhack_2024",
+    "chatchannel": "poppy_bagel",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/2",
+    "issue_number": 2
+  },
+  {
+    "title": "NARPS Open Pipelines",
+    "goals": "The goal of the NARPS Open Pipelines project is to create a codebase reproducing the 70 pipelines of the NARPS study (Botvinik-Nezer et al., 2020) and share this as an open resource for the community. We base our reproductions on the original descriptions provided by the teams and test the quality of the reproductions by comparing our results with the original results published on NeuroVault.\nThe Neuroimaging Analysis Replication and Prediction Study (NARPS-[Botvinik-Nezer et al., 2020)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7771346/) aimed to provide the first scientific evidence on the variability of results across analysis teams in neuroscience. 70 teams were asked to analyze the same dataset (task-fMRI with 108 participants) and then, to provide their methods and results to be later analyzed and compared.\nWe would like to focus on these tasks during the Brainhack:\n- Start writing the pseudo code of a pipeline based on the knowledge of participants (i.e.: which fMRI analysis software they are used to, whether they use Python or not, ...)\n- Start reproducing the pipeline from the pseudo code,\n- Improving documentation and accessibility of the project.",
+    "link": "https://github.com/Inria-Empenn/narps_open_pipelines",
+    "website-image": "https://github.com/Inria-Empenn/narps_open_pipelines/blob/main/assets/images/project_illustration.png",
+    "project-leads": "Lefort-Besnard jlefortbesnard jlefortbesnard",
+    "hub": "Seoul",
+    "pitch": null,
+    "otherhub": [
+      "Hybrid (Europe / Middle East / Africa)"
+    ],
+    "skills": "Necessary:\n- task-fMRI preprocessing or task-fMRI analysis\nUseful but not necessary:\n- Programming (any language)\n- Nipype (Python) or SPM or AFNI or FSL\n- GLM\n- Basic knowledge of git and GitHub",
+    "tutorials": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7404612/\nhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC6319393/\nhttps://fmriprep.org/en/stable/\nhttps://andysbrainbook.readthedocs.io/en/latest/fMRI_Short_Course/fMRI_04_Preprocessing.html\nhttps://brainlife.io/docs/tutorial/fmri-preprocessing-tutorial/\nhttps://school-brainhack.github.io/modules/git_github/",
+    "issues": "To start with, participants could draft pseudo code outlining the data preprocessing and analysis procedures, mirroring the approach taken by one of the 70 NARPS teams. Initially, they would replicate this for a pipeline that has already been completely reproduced. Following this, they would repeat the process for a pipeline that has not yet been reproduced.\nThe pseudo code will specify the preprocessing and analysis steps without delving into the actual coding with Nipype, or at most using command lines from SPM/FSL/Afni for executing these specific steps.",
+    "twiter": "Help the neuroimaging community improve reproducibility by joining our hackathon project! The goal of the NARPS Open Pipelines project is to create a codebase reproducing the 70 task-fmri pipelines of the NARPS study (Botvinik-Nezer et al., 2020) and share this as an open resource for the community.\n#OHBMHackathon #Brainhack #OHBM2024",
+    "chatchannel": "NARPS_Open_Pipelines",
+    "coc": [
+      "I agree to follow the OHBM Code of Conduct during the hackathon"
+    ],
+    "issue_link": "https://github.com/ohbm/hackathon2024/issues/1",
+    "issue_number": 1
+  }
+]
