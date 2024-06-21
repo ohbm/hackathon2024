@@ -128,7 +128,7 @@ def fetch_gh_issues():
             pass
 
     # Write the filtered issue information to a JSON file
-    with open('./_data/projects.json', 'w') as f:
+    with open('./_data/discord_projects.json', 'w') as f:
         json.dump(issues_list, f, indent=2)
 
 # Run the fetch_gh_issues function if the script is executed directly

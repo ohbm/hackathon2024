@@ -179,7 +179,7 @@ class ProjectsClient(commands.Bot):
 
     async def ensure_projects(self):
         # Load project data from JSON file
-        with open('_data/projects.json', 'r') as f:
+        with open('_data/discord_projects.json', 'r') as f:
             projects_data = json.load(f)
 
         for i, data in enumerate(projects_data):
